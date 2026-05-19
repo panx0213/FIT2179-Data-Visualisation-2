@@ -1,0 +1,68 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The K-pop Wave in Australia",
+    "subtitle": "Number of K-pop tracks reaching Australia's Spotify Top 200, 2015–2025 (PLACEHOLDER DATA)",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 320,
+  "data": {
+    "values": [
+      {"year": 2015, "tracks": 2},
+      {"year": 2016, "tracks": 5},
+      {"year": 2017, "tracks": 11},
+      {"year": 2018, "tracks": 18},
+      {"year": 2019, "tracks": 27},
+      {"year": 2020, "tracks": 41},
+      {"year": 2021, "tracks": 62},
+      {"year": 2022, "tracks": 78},
+      {"year": 2023, "tracks": 95},
+      {"year": 2024, "tracks": 112},
+      {"year": 2025, "tracks": 168}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "area", "color": "#e94560", "opacity": 0.25, "interpolate": "monotone"},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal", "title": "Year"},
+        "y": {"field": "tracks", "type": "quantitative", "title": "K-pop tracks in Top 200"}
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "#e94560", "strokeWidth": 3, "interpolate": "monotone"},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "tracks", "type": "quantitative"}
+      }
+    },
+    {
+      "mark": {"type": "point", "color": "#e94560", "filled": true, "size": 80},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "tracks", "type": "quantitative"},
+        "tooltip": [
+          {"field": "year", "title": "Year"},
+          {"field": "tracks", "title": "Tracks in Top 200"}
+        ]
+      }
+    },
+    {
+      "data": {"values": [{"year": 2025, "tracks": 168, "label": "K-pop Demon Hunters OST"}]},
+      "mark": {"type": "text", "align": "right", "dx": -10, "dy": -15, "fontWeight": "bold", "color": "#1a1a2e"},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "tracks", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 11, "titleFontSize": 12},
+    "view": {"stroke": null}
+  }
+}

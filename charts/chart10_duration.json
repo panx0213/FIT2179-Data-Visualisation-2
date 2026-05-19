@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Short and Sweet",
+    "subtitle": "Song-duration distribution: K-pop hits in Australia vs Western Top 40 (PLACEHOLDER DATA)",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 280,
+  "data": {
+    "values": [
+      {"duration": 152, "category": "K-pop"}, {"duration": 168, "category": "K-pop"}, {"duration": 173, "category": "K-pop"},
+      {"duration": 178, "category": "K-pop"}, {"duration": 181, "category": "K-pop"}, {"duration": 183, "category": "K-pop"},
+      {"duration": 184, "category": "K-pop"}, {"duration": 186, "category": "K-pop"}, {"duration": 188, "category": "K-pop"},
+      {"duration": 190, "category": "K-pop"}, {"duration": 191, "category": "K-pop"}, {"duration": 192, "category": "K-pop"},
+      {"duration": 193, "category": "K-pop"}, {"duration": 195, "category": "K-pop"}, {"duration": 198, "category": "K-pop"},
+      {"duration": 201, "category": "K-pop"}, {"duration": 203, "category": "K-pop"}, {"duration": 207, "category": "K-pop"},
+      {"duration": 211, "category": "K-pop"}, {"duration": 218, "category": "K-pop"},
+      {"duration": 175, "category": "Western Top 40"}, {"duration": 188, "category": "Western Top 40"},
+      {"duration": 196, "category": "Western Top 40"}, {"duration": 201, "category": "Western Top 40"},
+      {"duration": 204, "category": "Western Top 40"}, {"duration": 208, "category": "Western Top 40"},
+      {"duration": 211, "category": "Western Top 40"}, {"duration": 214, "category": "Western Top 40"},
+      {"duration": 216, "category": "Western Top 40"}, {"duration": 218, "category": "Western Top 40"},
+      {"duration": 221, "category": "Western Top 40"}, {"duration": 224, "category": "Western Top 40"},
+      {"duration": 226, "category": "Western Top 40"}, {"duration": 229, "category": "Western Top 40"},
+      {"duration": 232, "category": "Western Top 40"}, {"duration": 235, "category": "Western Top 40"},
+      {"duration": 238, "category": "Western Top 40"}, {"duration": 242, "category": "Western Top 40"},
+      {"duration": 248, "category": "Western Top 40"}, {"duration": 258, "category": "Western Top 40"}
+    ]
+  },
+  "mark": {"type": "bar", "opacity": 0.75, "stroke": "white", "strokeWidth": 0.5},
+  "encoding": {
+    "x": {
+      "field": "duration",
+      "type": "quantitative",
+      "title": "Duration (seconds)",
+      "bin": {"step": 10}
+    },
+    "y": {"aggregate": "count", "type": "quantitative", "title": "Number of songs", "stack": null},
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Category",
+      "scale": {"domain": ["K-pop", "Western Top 40"], "range": ["#e94560", "#1a1a2e"]}
+    },
+    "tooltip": [
+      {"field": "category", "title": "Category"},
+      {"aggregate": "count", "title": "Songs"}
+    ]
+  },
+  "config": {"view": {"stroke": null}}
+}

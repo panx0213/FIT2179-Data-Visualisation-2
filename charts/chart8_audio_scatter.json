@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The Aussie K-pop Palette",
+    "subtitle": "Audio features of top K-pop tracks on Australian Spotify vs global Top 10 (PLACEHOLDER DATA)",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 360,
+  "data": {
+    "values": [
+      {"track": "Soda Pop",        "danceability": 0.84, "energy": 0.72, "market": "Australia"},
+      {"track": "Golden",          "danceability": 0.71, "energy": 0.68, "market": "Australia"},
+      {"track": "How It's Done",   "danceability": 0.82, "energy": 0.81, "market": "Australia"},
+      {"track": "Get a Guitar",    "danceability": 0.79, "energy": 0.76, "market": "Australia"},
+      {"track": "Magnetic",        "danceability": 0.76, "energy": 0.65, "market": "Australia"},
+      {"track": "Super Shy",       "danceability": 0.81, "energy": 0.60, "market": "Australia"},
+      {"track": "ETA",             "danceability": 0.78, "energy": 0.74, "market": "Australia"},
+      {"track": "Smart",           "danceability": 0.86, "energy": 0.71, "market": "Australia"},
+      {"track": "Drama",           "danceability": 0.83, "energy": 0.77, "market": "Australia"},
+      {"track": "Standing Next to You","danceability": 0.74, "energy": 0.86, "market": "Australia"},
+      {"track": "FRI(END)S",       "danceability": 0.66, "energy": 0.81, "market": "Global"},
+      {"track": "Lovesick Girls",  "danceability": 0.74, "energy": 0.84, "market": "Global"},
+      {"track": "Pink Venom",      "danceability": 0.79, "energy": 0.83, "market": "Global"},
+      {"track": "Dynamite",        "danceability": 0.75, "energy": 0.82, "market": "Global"},
+      {"track": "Butter",          "danceability": 0.76, "energy": 0.86, "market": "Global"},
+      {"track": "MIC Drop",        "danceability": 0.68, "energy": 0.89, "market": "Global"},
+      {"track": "DDU-DU DDU-DU",   "danceability": 0.71, "energy": 0.88, "market": "Global"},
+      {"track": "Kill This Love",  "danceability": 0.65, "energy": 0.91, "market": "Global"},
+      {"track": "GOD'S MENU",      "danceability": 0.69, "energy": 0.94, "market": "Global"},
+      {"track": "ATTENTION",       "danceability": 0.72, "energy": 0.85, "market": "Global"}
+    ]
+  },
+  "mark": {"type": "circle", "size": 140, "opacity": 0.75, "stroke": "white", "strokeWidth": 1},
+  "encoding": {
+    "x": {
+      "field": "danceability",
+      "type": "quantitative",
+      "title": "Danceability (0–1)",
+      "scale": {"domain": [0.6, 0.95]}
+    },
+    "y": {
+      "field": "energy",
+      "type": "quantitative",
+      "title": "Energy (0–1)",
+      "scale": {"domain": [0.55, 1.0]}
+    },
+    "color": {
+      "field": "market",
+      "type": "nominal",
+      "title": "Market",
+      "scale": {"domain": ["Australia", "Global"], "range": ["#e94560", "#1a1a2e"]}
+    },
+    "tooltip": [
+      {"field": "track", "title": "Track"},
+      {"field": "market", "title": "Market"},
+      {"field": "danceability", "title": "Danceability"},
+      {"field": "energy", "title": "Energy"}
+    ]
+  },
+  "config": {"view": {"stroke": null}}
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Where the Lightsticks Glow",
+    "subtitle": "K-pop concert venues in Australia, 2015–2025 — bubble size = estimated attendance (PLACEHOLDER DATA)",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 480,
+  "projection": {"type": "mercator", "center": [134, -28], "scale": 700},
+  "layer": [
+    {
+      "data": {
+        "url": "data/au-states.geojson",
+        "format": {"type": "json", "property": "features"}
+      },
+      "mark": {"type": "geoshape", "fill": "#eee", "stroke": "white", "strokeWidth": 1}
+    },
+    {
+      "data": {
+        "values": [
+          {"venue": "Marvel Stadium",        "city": "Melbourne", "lon": 144.9475, "lat": -37.8166, "attendance": 53000, "group": "BLACKPINK"},
+          {"venue": "Qudos Bank Arena",      "city": "Sydney",    "lon": 151.0664, "lat": -33.8430, "attendance": 18500, "group": "TWICE"},
+          {"venue": "Rod Laver Arena",       "city": "Melbourne", "lon": 144.9789, "lat": -37.8217, "attendance": 15000, "group": "Stray Kids"},
+          {"venue": "Allianz Stadium",       "city": "Sydney",    "lon": 151.2247, "lat": -33.8888, "attendance": 42000, "group": "BTS"},
+          {"venue": "RAC Arena",             "city": "Perth",     "lon": 115.8467, "lat": -31.9468, "attendance": 12000, "group": "NewJeans"},
+          {"venue": "Brisbane Entertainment Centre", "city": "Brisbane", "lon": 153.0731, "lat": -27.3438, "attendance": 9500, "group": "SEVENTEEN"},
+          {"venue": "Adelaide Entertainment Centre", "city": "Adelaide", "lon": 138.5731, "lat": -34.9051, "attendance": 6500, "group": "ITZY"},
+          {"venue": "John Cain Arena",       "city": "Melbourne", "lon": 144.9805, "lat": -37.8226, "attendance": 8500, "group": "ATEEZ"}
+        ]
+      },
+      "mark": {"type": "circle", "opacity": 0.7, "stroke": "#1a1a2e", "strokeWidth": 1},
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "size": {
+          "field": "attendance",
+          "type": "quantitative",
+          "title": "Attendance",
+          "scale": {"range": [50, 1500]}
+        },
+        "color": {"value": "#e94560"},
+        "tooltip": [
+          {"field": "venue", "title": "Venue"},
+          {"field": "city", "title": "City"},
+          {"field": "group", "title": "Headliner"},
+          {"field": "attendance", "title": "Attendance"}
+        ]
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}}
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The East Coast Owns the Tour Circuit",
+    "subtitle": "K-pop concerts held by city, 2015–2025 (PLACEHOLDER DATA)",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 260,
+  "data": {
+    "values": [
+      {"city": "Sydney",    "concerts": 14, "attendance": 195000},
+      {"city": "Melbourne", "concerts": 12, "attendance": 168000},
+      {"city": "Brisbane",  "concerts":  4, "attendance":  38000},
+      {"city": "Perth",     "concerts":  3, "attendance":  31000},
+      {"city": "Adelaide",  "concerts":  2, "attendance":  14000},
+      {"city": "Canberra",  "concerts":  1, "attendance":   6000}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "bar", "color": "#e94560", "cornerRadiusEnd": 4},
+      "encoding": {
+        "y": {"field": "city", "type": "nominal", "sort": "-x", "title": null},
+        "x": {"field": "concerts", "type": "quantitative", "title": "Number of K-pop concerts"},
+        "tooltip": [
+          {"field": "city", "title": "City"},
+          {"field": "concerts", "title": "Concerts"},
+          {"field": "attendance", "title": "Total attendance"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "dx": 6, "color": "#1a1a2e", "fontWeight": "bold"},
+      "encoding": {
+        "y": {"field": "city", "type": "nominal", "sort": "-x"},
+        "x": {"field": "concerts", "type": "quantitative"},
+        "text": {"field": "concerts"}
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}, "axis": {"grid": false}}
+}

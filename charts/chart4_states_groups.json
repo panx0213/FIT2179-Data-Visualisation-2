@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Each State Has Its Bias",
+    "subtitle": "Relative popularity of top K-pop groups by Australian state (PLACEHOLDER DATA)",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 280,
+  "data": {
+    "values": [
+      {"state": "NSW", "group": "BTS",        "score": 82},
+      {"state": "NSW", "group": "BLACKPINK",  "score": 78},
+      {"state": "NSW", "group": "TWICE",      "score": 64},
+      {"state": "NSW", "group": "NewJeans",   "score": 71},
+      {"state": "NSW", "group": "Stray Kids", "score": 58},
+      {"state": "NSW", "group": "SEVENTEEN",  "score": 49},
+      {"state": "VIC", "group": "BTS",        "score": 79},
+      {"state": "VIC", "group": "BLACKPINK",  "score": 81},
+      {"state": "VIC", "group": "TWICE",      "score": 70},
+      {"state": "VIC", "group": "NewJeans",   "score": 76},
+      {"state": "VIC", "group": "Stray Kids", "score": 66},
+      {"state": "VIC", "group": "SEVENTEEN",  "score": 55},
+      {"state": "QLD", "group": "BTS",        "score": 68},
+      {"state": "QLD", "group": "BLACKPINK",  "score": 62},
+      {"state": "QLD", "group": "TWICE",      "score": 48},
+      {"state": "QLD", "group": "NewJeans",   "score": 55},
+      {"state": "QLD", "group": "Stray Kids", "score": 41},
+      {"state": "QLD", "group": "SEVENTEEN",  "score": 36},
+      {"state": "WA",  "group": "BTS",        "score": 74},
+      {"state": "WA",  "group": "BLACKPINK",  "score": 69},
+      {"state": "WA",  "group": "TWICE",      "score": 58},
+      {"state": "WA",  "group": "NewJeans",   "score": 63},
+      {"state": "WA",  "group": "Stray Kids", "score": 52},
+      {"state": "WA",  "group": "SEVENTEEN",  "score": 45},
+      {"state": "SA",  "group": "BTS",        "score": 63},
+      {"state": "SA",  "group": "BLACKPINK",  "score": 58},
+      {"state": "SA",  "group": "TWICE",      "score": 44},
+      {"state": "SA",  "group": "NewJeans",   "score": 51},
+      {"state": "SA",  "group": "Stray Kids", "score": 39},
+      {"state": "SA",  "group": "SEVENTEEN",  "score": 32},
+      {"state": "TAS", "group": "BTS",        "score": 52},
+      {"state": "TAS", "group": "BLACKPINK",  "score": 47},
+      {"state": "TAS", "group": "TWICE",      "score": 34},
+      {"state": "TAS", "group": "NewJeans",   "score": 42},
+      {"state": "TAS", "group": "Stray Kids", "score": 29},
+      {"state": "TAS", "group": "SEVENTEEN",  "score": 24},
+      {"state": "ACT", "group": "BTS",        "score": 85},
+      {"state": "ACT", "group": "BLACKPINK",  "score": 82},
+      {"state": "ACT", "group": "TWICE",      "score": 71},
+      {"state": "ACT", "group": "NewJeans",   "score": 79},
+      {"state": "ACT", "group": "Stray Kids", "score": 64},
+      {"state": "ACT", "group": "SEVENTEEN",  "score": 56},
+      {"state": "NT",  "group": "BTS",        "score": 44},
+      {"state": "NT",  "group": "BLACKPINK",  "score": 38},
+      {"state": "NT",  "group": "TWICE",      "score": 26},
+      {"state": "NT",  "group": "NewJeans",   "score": 31},
+      {"state": "NT",  "group": "Stray Kids", "score": 22},
+      {"state": "NT",  "group": "SEVENTEEN",  "score": 18}
+    ]
+  },
+  "mark": {"type": "rect", "stroke": "white", "strokeWidth": 1},
+  "encoding": {
+    "x": {"field": "group", "type": "nominal", "title": null, "axis": {"labelAngle": 0}},
+    "y": {
+      "field": "state",
+      "type": "nominal",
+      "title": null,
+      "sort": ["ACT", "VIC", "NSW", "WA", "QLD", "SA", "TAS", "NT"]
+    },
+    "color": {
+      "field": "score",
+      "type": "quantitative",
+      "title": "Popularity",
+      "scale": {"scheme": "reds", "domain": [0, 100]}
+    },
+    "tooltip": [
+      {"field": "state", "title": "State"},
+      {"field": "group", "title": "Group"},
+      {"field": "score", "title": "Popularity"}
+    ]
+  },
+  "config": {"view": {"stroke": null}}
+}

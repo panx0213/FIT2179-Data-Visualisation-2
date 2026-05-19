@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Who Owns the Sound?",
+    "subtitle": "Share of K-pop streams in Australia by entertainment company (PLACEHOLDER DATA)",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 300,
+  "data": {
+    "values": [
+      {"year": 2019, "company": "HYBE",   "share": 42},
+      {"year": 2019, "company": "SM",     "share": 22},
+      {"year": 2019, "company": "JYP",    "share": 14},
+      {"year": 2019, "company": "YG",     "share": 16},
+      {"year": 2019, "company": "Other",  "share": 6},
+      {"year": 2020, "company": "HYBE",   "share": 48},
+      {"year": 2020, "company": "SM",     "share": 18},
+      {"year": 2020, "company": "JYP",    "share": 13},
+      {"year": 2020, "company": "YG",     "share": 14},
+      {"year": 2020, "company": "Other",  "share": 7},
+      {"year": 2021, "company": "HYBE",   "share": 45},
+      {"year": 2021, "company": "SM",     "share": 16},
+      {"year": 2021, "company": "JYP",    "share": 17},
+      {"year": 2021, "company": "YG",     "share": 13},
+      {"year": 2021, "company": "Other",  "share": 9},
+      {"year": 2022, "company": "HYBE",   "share": 40},
+      {"year": 2022, "company": "SM",     "share": 19},
+      {"year": 2022, "company": "JYP",    "share": 20},
+      {"year": 2022, "company": "YG",     "share": 11},
+      {"year": 2022, "company": "Other",  "share": 10},
+      {"year": 2023, "company": "HYBE",   "share": 36},
+      {"year": 2023, "company": "SM",     "share": 17},
+      {"year": 2023, "company": "JYP",    "share": 23},
+      {"year": 2023, "company": "YG",     "share": 12},
+      {"year": 2023, "company": "Other",  "share": 12},
+      {"year": 2024, "company": "HYBE",   "share": 34},
+      {"year": 2024, "company": "SM",     "share": 18},
+      {"year": 2024, "company": "JYP",    "share": 21},
+      {"year": 2024, "company": "YG",     "share": 13},
+      {"year": 2024, "company": "Other",  "share": 14},
+      {"year": 2025, "company": "HYBE",   "share": 30},
+      {"year": 2025, "company": "SM",     "share": 17},
+      {"year": 2025, "company": "JYP",    "share": 22},
+      {"year": 2025, "company": "YG",     "share": 12},
+      {"year": 2025, "company": "Other",  "share": 19}
+    ]
+  },
+  "mark": {"type": "area", "interpolate": "monotone"},
+  "encoding": {
+    "x": {"field": "year", "type": "ordinal", "title": "Year", "axis": {"labelAngle": 0}},
+    "y": {"field": "share", "type": "quantitative", "stack": "normalize", "title": "Share of streams", "axis": {"format": ".0%"}},
+    "color": {
+      "field": "company",
+      "type": "nominal",
+      "title": "Company",
+      "scale": {
+        "domain": ["HYBE", "SM", "JYP", "YG", "Other"],
+        "range": ["#e94560", "#1a1a2e", "#f39c12", "#27ae60", "#bdc3c7"]
+      }
+    },
+    "tooltip": [
+      {"field": "year", "title": "Year"},
+      {"field": "company", "title": "Company"},
+      {"field": "share", "title": "Share %"}
+    ]
+  },
+  "config": {"view": {"stroke": null}}
+}

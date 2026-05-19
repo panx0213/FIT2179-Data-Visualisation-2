@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Which States Are Most Into K-pop?",
+    "subtitle": "Google Trends search interest by state, 2024–2025 (0 = none, 100 = peak) — PLACEHOLDER DATA",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 480,
+  "projection": {"type": "mercator", "center": [134, -28], "scale": 700},
+  "layer": [
+    {
+      "data": {
+        "url": "data/au-states.geojson",
+        "format": {"type": "json", "property": "features"}
+      },
+      "transform": [
+        {
+          "lookup": "properties.STATE_NAME",
+          "from": {
+            "data": {
+              "values": [
+                {"state": "New South Wales",              "interest": 78, "abbrev": "NSW"},
+                {"state": "Victoria",                     "interest": 84, "abbrev": "VIC"},
+                {"state": "Queensland",                   "interest": 62, "abbrev": "QLD"},
+                {"state": "Western Australia",            "interest": 71, "abbrev": "WA"},
+                {"state": "South Australia",              "interest": 58, "abbrev": "SA"},
+                {"state": "Tasmania",                     "interest": 49, "abbrev": "TAS"},
+                {"state": "Northern Territory",           "interest": 41, "abbrev": "NT"},
+                {"state": "Australian Capital Territory", "interest": 88, "abbrev": "ACT"}
+              ]
+            },
+            "key": "state",
+            "fields": ["interest", "abbrev"]
+          }
+        }
+      ],
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 1},
+      "encoding": {
+        "color": {
+          "field": "interest",
+          "type": "quantitative",
+          "title": "Interest",
+          "scale": {"scheme": "reds", "domain": [0, 100]}
+        },
+        "tooltip": [
+          {"field": "properties.STATE_NAME", "title": "State"},
+          {"field": "interest", "title": "Search interest"}
+        ]
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}}
+}

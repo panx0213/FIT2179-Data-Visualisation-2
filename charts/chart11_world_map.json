@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Australia in the Global K-pop Map",
+    "subtitle": "K-pop's share of total recorded-music streams by country, 2024 — Australia ranks outside the top 10 (PLACEHOLDER DATA)",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 420,
+  "projection": {"type": "naturalEarth1"},
+  "layer": [
+    {
+      "data": {
+        "url": "https://cdn.jsdelivr.net/npm/vega-datasets@2/data/world-110m.json",
+        "format": {"type": "topojson", "feature": "countries"}
+      },
+      "transform": [
+        {
+          "lookup": "id",
+          "from": {
+            "data": {
+              "values": [
+                {"id": 410, "country": "South Korea",   "share": 38.0},
+                {"id": 392, "country": "Japan",         "share": 12.0},
+                {"id": 360, "country": "Indonesia",     "share":  9.2},
+                {"id": 608, "country": "Philippines",   "share":  8.5},
+                {"id": 458, "country": "Malaysia",      "share":  7.8},
+                {"id": 764, "country": "Thailand",      "share":  7.5},
+                {"id": 704, "country": "Vietnam",       "share":  6.4},
+                {"id": 158, "country": "Taiwan",        "share":  5.9},
+                {"id": 484, "country": "Mexico",        "share":  4.7},
+                {"id": 840, "country": "United States", "share":  4.1},
+                {"id":  36, "country": "Australia",     "share":  2.6},
+                {"id": 826, "country": "United Kingdom","share":  2.3},
+                {"id": 124, "country": "Canada",        "share":  2.1},
+                {"id": 250, "country": "France",        "share":  1.9},
+                {"id": 276, "country": "Germany",       "share":  1.4},
+                {"id":  76, "country": "Brazil",        "share":  3.2},
+                {"id": 554, "country": "New Zealand",   "share":  2.0}
+              ]
+            },
+            "key": "id",
+            "fields": ["country", "share"]
+          }
+        }
+      ],
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.4},
+      "encoding": {
+        "color": {
+          "field": "share",
+          "type": "quantitative",
+          "title": "K-pop share of streams (%)",
+          "scale": {"scheme": "reds", "domainMin": 0},
+          "condition": {"test": "datum.share == null", "value": "#eaeaea"}
+        },
+        "tooltip": [
+          {"field": "country", "title": "Country"},
+          {"field": "share", "title": "K-pop share %"}
+        ]
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}}
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Sound DNA: Australia vs Global",
+    "subtitle": "Average audio features of top K-pop tracks — Australia leans softer and more acoustic (PLACEHOLDER DATA)",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 320,
+  "data": {
+    "values": [
+      {"feature": "Danceability", "market": "Australia", "value": 0.79},
+      {"feature": "Energy",       "market": "Australia", "value": 0.73},
+      {"feature": "Valence",      "market": "Australia", "value": 0.62},
+      {"feature": "Acousticness", "market": "Australia", "value": 0.31},
+      {"feature": "Tempo (norm)", "market": "Australia", "value": 0.55},
+      {"feature": "Speechiness",  "market": "Australia", "value": 0.18},
+      {"feature": "Danceability", "market": "Global",    "value": 0.72},
+      {"feature": "Energy",       "market": "Global",    "value": 0.86},
+      {"feature": "Valence",      "market": "Global",    "value": 0.51},
+      {"feature": "Acousticness", "market": "Global",    "value": 0.12},
+      {"feature": "Tempo (norm)", "market": "Global",    "value": 0.74},
+      {"feature": "Speechiness",  "market": "Global",    "value": 0.27}
+    ]
+  },
+  "mark": {"type": "bar", "cornerRadius": 4, "opacity": 0.85},
+  "encoding": {
+    "x": {
+      "field": "feature",
+      "type": "nominal",
+      "title": null,
+      "axis": {"labelAngle": 0}
+    },
+    "xOffset": {"field": "market", "type": "nominal"},
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Average score (0–1)",
+      "scale": {"domain": [0, 1]}
+    },
+    "color": {
+      "field": "market",
+      "type": "nominal",
+      "title": "Market",
+      "scale": {"domain": ["Australia", "Global"], "range": ["#e94560", "#1a1a2e"]}
+    },
+    "tooltip": [
+      {"field": "feature", "title": "Feature"},
+      {"field": "market", "title": "Market"},
+      {"field": "value", "title": "Score"}
+    ]
+  },
+  "config": {"view": {"stroke": null}, "axis": {"grid": false}}
+}

@@ -1,0 +1,88 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The Ever-Shifting Top 5",
+    "subtitle": "Yearly rank of the most-streamed K-pop acts in Australia (1 = top) — PLACEHOLDER DATA",
+    "anchor": "start",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 340,
+  "data": {
+    "values": [
+      {"year": 2020, "group": "BTS",         "rank": 1},
+      {"year": 2020, "group": "BLACKPINK",   "rank": 2},
+      {"year": 2020, "group": "TWICE",       "rank": 3},
+      {"year": 2020, "group": "Stray Kids",  "rank": 6},
+      {"year": 2020, "group": "NewJeans",    "rank": 12},
+      {"year": 2020, "group": "SEVENTEEN",   "rank": 7},
+
+      {"year": 2021, "group": "BTS",         "rank": 1},
+      {"year": 2021, "group": "BLACKPINK",   "rank": 2},
+      {"year": 2021, "group": "TWICE",       "rank": 4},
+      {"year": 2021, "group": "Stray Kids",  "rank": 5},
+      {"year": 2021, "group": "NewJeans",    "rank": 12},
+      {"year": 2021, "group": "SEVENTEEN",   "rank": 6},
+
+      {"year": 2022, "group": "BTS",         "rank": 1},
+      {"year": 2022, "group": "BLACKPINK",   "rank": 2},
+      {"year": 2022, "group": "TWICE",       "rank": 4},
+      {"year": 2022, "group": "Stray Kids",  "rank": 3},
+      {"year": 2022, "group": "NewJeans",    "rank": 5},
+      {"year": 2022, "group": "SEVENTEEN",   "rank": 6},
+
+      {"year": 2023, "group": "BTS",         "rank": 3},
+      {"year": 2023, "group": "BLACKPINK",   "rank": 4},
+      {"year": 2023, "group": "TWICE",       "rank": 5},
+      {"year": 2023, "group": "Stray Kids",  "rank": 2},
+      {"year": 2023, "group": "NewJeans",    "rank": 1},
+      {"year": 2023, "group": "SEVENTEEN",   "rank": 6},
+
+      {"year": 2024, "group": "BTS",         "rank": 5},
+      {"year": 2024, "group": "BLACKPINK",   "rank": 6},
+      {"year": 2024, "group": "TWICE",       "rank": 7},
+      {"year": 2024, "group": "Stray Kids",  "rank": 2},
+      {"year": 2024, "group": "NewJeans",    "rank": 1},
+      {"year": 2024, "group": "SEVENTEEN",   "rank": 4},
+
+      {"year": 2025, "group": "BTS",         "rank": 8},
+      {"year": 2025, "group": "BLACKPINK",   "rank": 5},
+      {"year": 2025, "group": "TWICE",       "rank": 6},
+      {"year": 2025, "group": "Stray Kids",  "rank": 3},
+      {"year": 2025, "group": "NewJeans",    "rank": 1},
+      {"year": 2025, "group": "SEVENTEEN",   "rank": 4}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "interpolate": "monotone", "strokeWidth": 3, "point": {"size": 90, "filled": true}},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal", "title": "Year", "axis": {"labelAngle": 0}},
+        "y": {
+          "field": "rank",
+          "type": "quantitative",
+          "title": "Rank",
+          "scale": {"reverse": true, "domain": [1, 12]},
+          "axis": {"values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
+        },
+        "color": {
+          "field": "group",
+          "type": "nominal",
+          "title": "Group",
+          "scale": {
+            "domain": ["BTS", "BLACKPINK", "TWICE", "Stray Kids", "NewJeans", "SEVENTEEN"],
+            "range": ["#9b59b6", "#e94560", "#f39c12", "#1a1a2e", "#16a085", "#3498db"]
+          }
+        },
+        "tooltip": [
+          {"field": "group", "title": "Group"},
+          {"field": "year", "title": "Year"},
+          {"field": "rank", "title": "Rank"}
+        ]
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}}
+}
