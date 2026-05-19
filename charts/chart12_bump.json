@@ -10,6 +10,7 @@
   },
   "width": "container",
   "height": 340,
+  "autosize": {"type": "fit-x", "contains": "padding"},
   "data": {
     "values": [
       {"year": 2020, "group": "BTS",         "rank": 1},

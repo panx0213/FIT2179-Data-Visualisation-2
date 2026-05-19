@@ -10,6 +10,7 @@
   },
   "width": "container",
   "height": 260,
+  "autosize": {"type": "fit-x", "contains": "padding"},
   "data": {
     "values": [
       {"city": "Sydney",    "concerts": 14, "attendance": 195000},

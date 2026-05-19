@@ -10,6 +10,7 @@
   },
   "width": "container",
   "height": 420,
+  "autosize": {"type": "fit-x", "contains": "padding"},
   "projection": {"type": "naturalEarth1"},
   "layer": [
     {

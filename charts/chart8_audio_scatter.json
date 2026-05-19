@@ -10,6 +10,7 @@
   },
   "width": "container",
   "height": 360,
+  "autosize": {"type": "fit-x", "contains": "padding"},
   "data": {
     "values": [
       {"track": "Soda Pop",        "danceability": 0.84, "energy": 0.72, "market": "Australia"},

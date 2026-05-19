@@ -10,7 +10,8 @@
   },
   "width": "container",
   "height": 480,
-  "projection": {"type": "mercator", "center": [134, -28], "scale": 700},
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "projection": {"type": "mercator"},
   "layer": [
     {
       "data": {

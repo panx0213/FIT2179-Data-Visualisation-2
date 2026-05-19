@@ -10,6 +10,7 @@
   },
   "width": "container",
   "height": 280,
+  "autosize": {"type": "fit-x", "contains": "padding"},
   "data": {
     "values": [
       {"duration": 152, "category": "K-pop"}, {"duration": 168, "category": "K-pop"}, {"duration": 173, "category": "K-pop"},

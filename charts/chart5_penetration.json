@@ -10,6 +10,7 @@
   },
   "width": "container",
   "height": 360,
+  "autosize": {"type": "fit-x", "contains": "padding"},
   "data": {
     "values": [
       {"state": "NSW", "pop_millions": 8.34, "interest": 78, "concerts": 14},

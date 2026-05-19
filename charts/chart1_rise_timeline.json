@@ -10,6 +10,7 @@
   },
   "width": "container",
   "height": 320,
+  "autosize": {"type": "fit-x", "contains": "padding"},
   "data": {
     "values": [
       {"year": 2015, "tracks": 2},

@@ -10,6 +10,7 @@
   },
   "width": "container",
   "height": 320,
+  "autosize": {"type": "fit-x", "contains": "padding"},
   "data": {
     "values": [
       {"feature": "Danceability", "market": "Australia", "value": 0.79},

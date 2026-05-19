@@ -10,6 +10,7 @@
   },
   "width": "container",
   "height": 300,
+  "autosize": {"type": "fit-x", "contains": "padding"},
   "data": {
     "values": [
       {"year": 2019, "company": "HYBE",   "share": 42},

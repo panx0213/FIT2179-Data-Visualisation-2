@@ -10,6 +10,7 @@
   },
   "width": "container",
   "height": 280,
+  "autosize": {"type": "fit-x", "contains": "padding"},
   "data": {
     "values": [
       {"state": "NSW", "group": "BTS",        "score": 82},
