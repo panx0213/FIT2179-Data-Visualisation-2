@@ -53,11 +53,27 @@ main {
 }
 
 .chart {
+  display: block;
+  width: 100%;
   margin: 2rem 0;
   background: white;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.chart > .vega-embed,
+.chart .vega-embed {
+  display: block !important;
+  width: 100% !important;
+}
+
+.chart .vega-embed > svg,
+.chart .vega-embed > canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 footer {

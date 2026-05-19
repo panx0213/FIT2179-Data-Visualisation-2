@@ -16,9 +16,24 @@ const charts = [
   { id: "chart12", spec: "charts/chart12_bump.json" },
 ];
 
-charts.forEach(({ id, spec }) => {
+function embedChart({ id, spec }) {
   const el = document.getElementById(id);
   if (!el) return;
-  vegaEmbed(`#${id}`, spec, { actions: false })
-    .catch(() => console.log(`Chart ${id} not yet built (${spec})`));
+
+  vegaEmbed(`#${id}`, spec, {
+    actions: false,
+    renderer: "svg",
+    mode: "vega-lite"
+  })
+    .then(({ view }) => {
+      const ro = new ResizeObserver(() => {
+        try { view.resize().runAsync(); } catch (e) { /* ignore */ }
+      });
+      ro.observe(el);
+    })
+    .catch((err) => console.warn(`Chart ${id} failed (${spec}):`, err));
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  charts.forEach(embedChart);
 });
