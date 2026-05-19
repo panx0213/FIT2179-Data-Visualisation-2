@@ -1,69 +1,283 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "The K-pop Wave in Australia",
-    "subtitle": "Number of K-pop tracks reaching Australia's Spotify Top 200, 2015–2025 (PLACEHOLDER DATA)",
+    "text": "The K-pop Wave Reaches Australia",
+    "subtitle": "Number of major K-pop concerts held in Australia per year, 2015–2025. Source: Wikipedia tour pages.",
     "anchor": "start",
     "fontSize": 18,
     "subtitleFontSize": 12,
     "subtitleColor": "#666"
   },
   "width": "container",
-  "height": 320,
-  "autosize": {"type": "fit-x", "contains": "padding"},
-  "data": {
-    "values": [
-      {"year": 2015, "tracks": 2},
-      {"year": 2016, "tracks": 5},
-      {"year": 2017, "tracks": 11},
-      {"year": 2018, "tracks": 18},
-      {"year": 2019, "tracks": 27},
-      {"year": 2020, "tracks": 41},
-      {"year": 2021, "tracks": 62},
-      {"year": 2022, "tracks": 78},
-      {"year": 2023, "tracks": 95},
-      {"year": 2024, "tracks": 112},
-      {"year": 2025, "tracks": 168}
-    ]
+  "height": 340,
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    }
   },
   "layer": [
     {
-      "mark": {"type": "area", "color": "#e94560", "opacity": 0.25, "interpolate": "monotone"},
+      "data": {
+        "values": [
+          {
+            "year": 2015,
+            "concerts": 0
+          },
+          {
+            "year": 2016,
+            "concerts": 0
+          },
+          {
+            "year": 2017,
+            "concerts": 2
+          },
+          {
+            "year": 2018,
+            "concerts": 0
+          },
+          {
+            "year": 2019,
+            "concerts": 0
+          },
+          {
+            "year": 2020,
+            "concerts": 0
+          },
+          {
+            "year": 2021,
+            "concerts": 0
+          },
+          {
+            "year": 2022,
+            "concerts": 0
+          },
+          {
+            "year": 2023,
+            "concerts": 13
+          },
+          {
+            "year": 2024,
+            "concerts": 2
+          },
+          {
+            "year": 2025,
+            "concerts": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "area",
+        "color": "#e94560",
+        "opacity": 0.25,
+        "interpolate": "monotone"
+      },
       "encoding": {
-        "x": {"field": "year", "type": "ordinal", "title": "Year"},
-        "y": {"field": "tracks", "type": "quantitative", "title": "K-pop tracks in Top 200"}
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": "Year",
+          "axis": {
+            "labelAngle": 0
+          }
+        },
+        "y": {
+          "field": "concerts",
+          "type": "quantitative",
+          "title": "K-pop concerts in Australia"
+        }
       }
     },
     {
-      "mark": {"type": "line", "color": "#e94560", "strokeWidth": 3, "interpolate": "monotone"},
+      "data": {
+        "values": [
+          {
+            "year": 2015,
+            "concerts": 0
+          },
+          {
+            "year": 2016,
+            "concerts": 0
+          },
+          {
+            "year": 2017,
+            "concerts": 2
+          },
+          {
+            "year": 2018,
+            "concerts": 0
+          },
+          {
+            "year": 2019,
+            "concerts": 0
+          },
+          {
+            "year": 2020,
+            "concerts": 0
+          },
+          {
+            "year": 2021,
+            "concerts": 0
+          },
+          {
+            "year": 2022,
+            "concerts": 0
+          },
+          {
+            "year": 2023,
+            "concerts": 13
+          },
+          {
+            "year": 2024,
+            "concerts": 2
+          },
+          {
+            "year": 2025,
+            "concerts": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "color": "#e94560",
+        "strokeWidth": 3,
+        "interpolate": "monotone"
+      },
       "encoding": {
-        "x": {"field": "year", "type": "ordinal"},
-        "y": {"field": "tracks", "type": "quantitative"}
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "concerts",
+          "type": "quantitative"
+        }
       }
     },
     {
-      "mark": {"type": "point", "color": "#e94560", "filled": true, "size": 80},
+      "data": {
+        "values": [
+          {
+            "year": 2015,
+            "concerts": 0
+          },
+          {
+            "year": 2016,
+            "concerts": 0
+          },
+          {
+            "year": 2017,
+            "concerts": 2
+          },
+          {
+            "year": 2018,
+            "concerts": 0
+          },
+          {
+            "year": 2019,
+            "concerts": 0
+          },
+          {
+            "year": 2020,
+            "concerts": 0
+          },
+          {
+            "year": 2021,
+            "concerts": 0
+          },
+          {
+            "year": 2022,
+            "concerts": 0
+          },
+          {
+            "year": 2023,
+            "concerts": 13
+          },
+          {
+            "year": 2024,
+            "concerts": 2
+          },
+          {
+            "year": 2025,
+            "concerts": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "point",
+        "color": "#e94560",
+        "filled": true,
+        "size": 80
+      },
       "encoding": {
-        "x": {"field": "year", "type": "ordinal"},
-        "y": {"field": "tracks", "type": "quantitative"},
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "concerts",
+          "type": "quantitative"
+        },
         "tooltip": [
-          {"field": "year", "title": "Year"},
-          {"field": "tracks", "title": "Tracks in Top 200"}
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "concerts",
+            "title": "Concerts"
+          }
         ]
       }
     },
     {
-      "data": {"values": [{"year": 2025, "tracks": 168, "label": "K-pop Demon Hunters OST"}]},
-      "mark": {"type": "text", "align": "right", "dx": -10, "dy": -15, "fontWeight": "bold", "color": "#1a1a2e"},
+      "data": {
+        "values": [
+          {
+            "year": 2017,
+            "concerts": 3,
+            "label": "BTS Wings Tour — first major K-pop shows"
+          },
+          {
+            "year": 2023,
+            "concerts": 15,
+            "label": "TWICE plays Marvel Stadium — first K-pop stadium concert"
+          },
+          {
+            "year": 2025,
+            "concerts": 1,
+            "label": "K-pop Demon Hunters OST hits ARIA #1"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "fontWeight": "bold",
+        "color": "#1a1a2e",
+        "fontSize": 11
+      },
       "encoding": {
-        "x": {"field": "year", "type": "ordinal"},
-        "y": {"field": "tracks", "type": "quantitative"},
-        "text": {"field": "label"}
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "concerts",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
       }
     }
   ],
-  "config": {
-    "axis": {"labelFontSize": 11, "titleFontSize": 12},
-    "view": {"stroke": null}
-  }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
 }

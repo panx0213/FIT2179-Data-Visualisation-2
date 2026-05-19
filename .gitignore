@@ -5,3 +5,6 @@ node_modules/
 *.log
 .env
 Thumbs.db
+
+# Local Kaggle dataset (only used at build time)
+data/spotify_tracks.csv

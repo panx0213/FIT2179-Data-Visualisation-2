@@ -1,73 +1,253 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Who Owns the Sound?",
-    "subtitle": "Share of K-pop streams in Australia by entertainment company (PLACEHOLDER DATA)",
+    "text": "Who Owns the Sound in Australia?",
+    "subtitle": "Top 24 K-pop tracks on Spotify Australia (weekly totals, May 2026), coloured by entertainment company. Source: kworb.net.",
     "anchor": "start",
     "fontSize": 18,
     "subtitleFontSize": 12,
     "subtitleColor": "#666"
   },
   "width": "container",
-  "height": 300,
-  "autosize": {"type": "fit-x", "contains": "padding"},
+  "height": 420,
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    }
+  },
   "data": {
     "values": [
-      {"year": 2019, "company": "HYBE",   "share": 42},
-      {"year": 2019, "company": "SM",     "share": 22},
-      {"year": 2019, "company": "JYP",    "share": 14},
-      {"year": 2019, "company": "YG",     "share": 16},
-      {"year": 2019, "company": "Other",  "share": 6},
-      {"year": 2020, "company": "HYBE",   "share": 48},
-      {"year": 2020, "company": "SM",     "share": 18},
-      {"year": 2020, "company": "JYP",    "share": 13},
-      {"year": 2020, "company": "YG",     "share": 14},
-      {"year": 2020, "company": "Other",  "share": 7},
-      {"year": 2021, "company": "HYBE",   "share": 45},
-      {"year": 2021, "company": "SM",     "share": 16},
-      {"year": 2021, "company": "JYP",    "share": 17},
-      {"year": 2021, "company": "YG",     "share": 13},
-      {"year": 2021, "company": "Other",  "share": 9},
-      {"year": 2022, "company": "HYBE",   "share": 40},
-      {"year": 2022, "company": "SM",     "share": 19},
-      {"year": 2022, "company": "JYP",    "share": 20},
-      {"year": 2022, "company": "YG",     "share": 11},
-      {"year": 2022, "company": "Other",  "share": 10},
-      {"year": 2023, "company": "HYBE",   "share": 36},
-      {"year": 2023, "company": "SM",     "share": 17},
-      {"year": 2023, "company": "JYP",    "share": 23},
-      {"year": 2023, "company": "YG",     "share": 12},
-      {"year": 2023, "company": "Other",  "share": 12},
-      {"year": 2024, "company": "HYBE",   "share": 34},
-      {"year": 2024, "company": "SM",     "share": 18},
-      {"year": 2024, "company": "JYP",    "share": 21},
-      {"year": 2024, "company": "YG",     "share": 13},
-      {"year": 2024, "company": "Other",  "share": 14},
-      {"year": 2025, "company": "HYBE",   "share": 30},
-      {"year": 2025, "company": "SM",     "share": 17},
-      {"year": 2025, "company": "JYP",    "share": 22},
-      {"year": 2025, "company": "YG",     "share": 12},
-      {"year": 2025, "company": "Other",  "share": 19}
+      {
+        "label": "HYBE",
+        "artist": "BTS",
+        "track": "Dynamite",
+        "streams": 23512194
+      },
+      {
+        "label": "YG",
+        "artist": "ROSÉ",
+        "track": "APT.",
+        "streams": 80640645
+      },
+      {
+        "label": "Other",
+        "artist": "HUNTR/X",
+        "track": "Golden",
+        "streams": 70921705
+      },
+      {
+        "label": "Other",
+        "artist": "HUNTR/X",
+        "track": "What It Sounds Like",
+        "streams": 27566212
+      },
+      {
+        "label": "Other",
+        "artist": "HUNTR/X",
+        "track": "How It's Done",
+        "streams": 26808353
+      },
+      {
+        "label": "Other",
+        "artist": "HUNTR/X",
+        "track": "Takedown",
+        "streams": 20064378
+      },
+      {
+        "label": "JYP",
+        "artist": "TWICE",
+        "track": "TAKEDOWN",
+        "streams": 11194254
+      },
+      {
+        "label": "JYP",
+        "artist": "TWICE",
+        "track": "Strategy",
+        "streams": 9275340
+      },
+      {
+        "label": "HYBE",
+        "artist": "Jung Kook",
+        "track": "Left and Right",
+        "streams": 8069935
+      },
+      {
+        "label": "YG",
+        "artist": "JENNIE",
+        "track": "like JENNIE",
+        "streams": 7650568
+      },
+      {
+        "label": "HYBE",
+        "artist": "NewJeans",
+        "track": "OMG",
+        "streams": 7442775
+      },
+      {
+        "label": "YG",
+        "artist": "BLACKPINK",
+        "track": "JUMP",
+        "streams": 7327921
+      },
+      {
+        "label": "YG",
+        "artist": "JENNIE",
+        "track": "Dracula (remix)",
+        "streams": 7237909
+      },
+      {
+        "label": "HYBE",
+        "artist": "NewJeans",
+        "track": "Super Shy",
+        "streams": 6862897
+      },
+      {
+        "label": "HYBE",
+        "artist": "BTS",
+        "track": "Butter",
+        "streams": 6500358
+      },
+      {
+        "label": "HYBE",
+        "artist": "BTS",
+        "track": "Boy With Luv",
+        "streams": 5841900
+      },
+      {
+        "label": "HYBE",
+        "artist": "NewJeans",
+        "track": "Ditto",
+        "streams": 5171825
+      },
+      {
+        "label": "YG",
+        "artist": "BLACKPINK",
+        "track": "Pink Venom",
+        "streams": 4905719
+      },
+      {
+        "label": "YG",
+        "artist": "LISA",
+        "track": "MONEY",
+        "streams": 4781043
+      },
+      {
+        "label": "YG",
+        "artist": "BLACKPINK",
+        "track": "Ice Cream",
+        "streams": 4661109
+      },
+      {
+        "label": "YG",
+        "artist": "BLACKPINK",
+        "track": "Kill This Love",
+        "streams": 4638506
+      },
+      {
+        "label": "HYBE",
+        "artist": "ILLIT",
+        "track": "Magnetic",
+        "streams": 4388579
+      },
+      {
+        "label": "YG",
+        "artist": "ROSÉ",
+        "track": "toxic till the end",
+        "streams": 3502927
+      },
+      {
+        "label": "YG",
+        "artist": "BLACKPINK",
+        "track": "Shut Down",
+        "streams": 3446077
+      }
     ]
   },
-  "mark": {"type": "area", "interpolate": "monotone"},
+  "transform": [
+    {
+      "window": [
+        {
+          "op": "row_number",
+          "as": "rank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "streams",
+          "order": "descending"
+        }
+      ]
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 3
+  },
   "encoding": {
-    "x": {"field": "year", "type": "ordinal", "title": "Year", "axis": {"labelAngle": 0}},
-    "y": {"field": "share", "type": "quantitative", "stack": "normalize", "title": "Share of streams", "axis": {"format": ".0%"}},
-    "color": {
-      "field": "company",
+    "y": {
+      "field": "track",
       "type": "nominal",
-      "title": "Company",
+      "sort": "-x",
+      "title": null,
+      "axis": {
+        "labelLimit": 200
+      }
+    },
+    "x": {
+      "field": "streams",
+      "type": "quantitative",
+      "title": "Total streams in Australia",
+      "axis": {
+        "format": "~s"
+      }
+    },
+    "color": {
+      "field": "label",
+      "type": "nominal",
+      "title": "Entertainment company",
       "scale": {
-        "domain": ["HYBE", "SM", "JYP", "YG", "Other"],
-        "range": ["#e94560", "#1a1a2e", "#f39c12", "#27ae60", "#bdc3c7"]
+        "domain": [
+          "HYBE",
+          "YG",
+          "JYP",
+          "SM",
+          "Other"
+        ],
+        "range": [
+          "#e94560",
+          "#9b59b6",
+          "#f39c12",
+          "#3498db",
+          "#7f8c8d"
+        ]
       }
     },
     "tooltip": [
-      {"field": "year", "title": "Year"},
-      {"field": "company", "title": "Company"},
-      {"field": "share", "title": "Share %"}
+      {
+        "field": "artist",
+        "title": "Artist"
+      },
+      {
+        "field": "track",
+        "title": "Track"
+      },
+      {
+        "field": "label",
+        "title": "Label"
+      },
+      {
+        "field": "streams",
+        "title": "AU streams",
+        "format": ","
+      }
     ]
   },
-  "config": {"view": {"stroke": null}}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
 }

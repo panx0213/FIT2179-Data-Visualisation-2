@@ -1,8 +1,7 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "The East Coast Owns the Tour Circuit",
-    "subtitle": "K-pop concerts held by city, 2015–2025 (PLACEHOLDER DATA)",
+    "text": "Sydney and Melbourne Own the Tour Circuit",
+    "subtitle": "K-pop concerts held in Australian capital cities, 2017–2024. Source: Wikipedia tour pages.",
     "anchor": "start",
     "fontSize": 18,
     "subtitleFontSize": 12,
@@ -10,38 +9,115 @@
   },
   "width": "container",
   "height": 260,
-  "autosize": {"type": "fit-x", "contains": "padding"},
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    }
+  },
   "data": {
     "values": [
-      {"city": "Sydney",    "concerts": 14, "attendance": 195000},
-      {"city": "Melbourne", "concerts": 12, "attendance": 168000},
-      {"city": "Brisbane",  "concerts":  4, "attendance":  38000},
-      {"city": "Perth",     "concerts":  3, "attendance":  31000},
-      {"city": "Adelaide",  "concerts":  2, "attendance":  14000},
-      {"city": "Canberra",  "concerts":  1, "attendance":   6000}
+      {
+        "city": "Sydney",
+        "concerts": 9,
+        "total_capacity": 177000
+      },
+      {
+        "city": "Melbourne",
+        "concerts": 8,
+        "total_capacity": 149420
+      },
+      {
+        "city": "Brisbane",
+        "concerts": 0,
+        "total_capacity": 0
+      },
+      {
+        "city": "Perth",
+        "concerts": 0,
+        "total_capacity": 0
+      },
+      {
+        "city": "Adelaide",
+        "concerts": 0,
+        "total_capacity": 0
+      },
+      {
+        "city": "Canberra",
+        "concerts": 0,
+        "total_capacity": 0
+      }
     ]
   },
   "layer": [
     {
-      "mark": {"type": "bar", "color": "#e94560", "cornerRadiusEnd": 4},
+      "mark": {
+        "type": "bar",
+        "color": "#e94560",
+        "cornerRadiusEnd": 4
+      },
       "encoding": {
-        "y": {"field": "city", "type": "nominal", "sort": "-x", "title": null},
-        "x": {"field": "concerts", "type": "quantitative", "title": "Number of K-pop concerts"},
+        "y": {
+          "field": "city",
+          "type": "nominal",
+          "sort": "-x",
+          "title": null
+        },
+        "x": {
+          "field": "concerts",
+          "type": "quantitative",
+          "title": "Number of K-pop concerts",
+          "axis": {
+            "tickMinStep": 1
+          }
+        },
         "tooltip": [
-          {"field": "city", "title": "City"},
-          {"field": "concerts", "title": "Concerts"},
-          {"field": "attendance", "title": "Total attendance"}
+          {
+            "field": "city",
+            "title": "City"
+          },
+          {
+            "field": "concerts",
+            "title": "Concerts"
+          },
+          {
+            "field": "total_capacity",
+            "title": "Combined venue capacity",
+            "format": ","
+          }
         ]
       }
     },
     {
-      "mark": {"type": "text", "align": "left", "dx": 6, "color": "#1a1a2e", "fontWeight": "bold"},
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "color": "#1a1a2e",
+        "fontWeight": "bold"
+      },
       "encoding": {
-        "y": {"field": "city", "type": "nominal", "sort": "-x"},
-        "x": {"field": "concerts", "type": "quantitative"},
-        "text": {"field": "concerts"}
+        "y": {
+          "field": "city",
+          "type": "nominal",
+          "sort": "-x"
+        },
+        "x": {
+          "field": "concerts",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "concerts"
+        }
       }
     }
   ],
-  "config": {"view": {"stroke": null}, "axis": {"grid": false}}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
 }

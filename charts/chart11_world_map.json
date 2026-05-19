@@ -1,8 +1,7 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Australia in the Global K-pop Map",
-    "subtitle": "K-pop's share of total recorded-music streams by country, 2024 — Australia ranks outside the top 10 (PLACEHOLDER DATA)",
+    "text": "Australia is the World's #9 Music Market — Where Does K-pop Land?",
+    "subtitle": "IFPI Global Music Report 2024 — recorded-music revenue (USD billions) for top 10 markets. K-pop ascended via Korea, Japan and SE Asia.",
     "anchor": "start",
     "fontSize": 18,
     "subtitleFontSize": 12,
@@ -10,13 +9,30 @@
   },
   "width": "container",
   "height": 420,
-  "autosize": {"type": "fit-x", "contains": "padding"},
-  "projection": {"type": "naturalEarth1"},
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    }
+  },
+  "projection": {
+    "type": "naturalEarth1"
+  },
   "layer": [
     {
       "data": {
         "url": "https://cdn.jsdelivr.net/npm/vega-datasets@2/data/world-110m.json",
-        "format": {"type": "topojson", "feature": "countries"}
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
       },
       "transform": [
         {
@@ -24,45 +40,98 @@
           "from": {
             "data": {
               "values": [
-                {"id": 410, "country": "South Korea",   "share": 38.0},
-                {"id": 392, "country": "Japan",         "share": 12.0},
-                {"id": 360, "country": "Indonesia",     "share":  9.2},
-                {"id": 608, "country": "Philippines",   "share":  8.5},
-                {"id": 458, "country": "Malaysia",      "share":  7.8},
-                {"id": 764, "country": "Thailand",      "share":  7.5},
-                {"id": 704, "country": "Vietnam",       "share":  6.4},
-                {"id": 158, "country": "Taiwan",        "share":  5.9},
-                {"id": 484, "country": "Mexico",        "share":  4.7},
-                {"id": 840, "country": "United States", "share":  4.1},
-                {"id":  36, "country": "Australia",     "share":  2.6},
-                {"id": 826, "country": "United Kingdom","share":  2.3},
-                {"id": 124, "country": "Canada",        "share":  2.1},
-                {"id": 250, "country": "France",        "share":  1.9},
-                {"id": 276, "country": "Germany",       "share":  1.4},
-                {"id":  76, "country": "Brazil",        "share":  3.2},
-                {"id": 554, "country": "New Zealand",   "share":  2.0}
+                {
+                  "id": 840,
+                  "country": "United States",
+                  "rev_usd_bn": 17.7
+                },
+                {
+                  "id": 392,
+                  "country": "Japan",
+                  "rev_usd_bn": 2.71
+                },
+                {
+                  "id": 826,
+                  "country": "United Kingdom",
+                  "rev_usd_bn": 1.92
+                },
+                {
+                  "id": 276,
+                  "country": "Germany",
+                  "rev_usd_bn": 1.74
+                },
+                {
+                  "id": 156,
+                  "country": "China",
+                  "rev_usd_bn": 1.43
+                },
+                {
+                  "id": 250,
+                  "country": "France",
+                  "rev_usd_bn": 1.21
+                },
+                {
+                  "id": 410,
+                  "country": "South Korea",
+                  "rev_usd_bn": 1.1
+                },
+                {
+                  "id": 124,
+                  "country": "Canada",
+                  "rev_usd_bn": 0.59
+                },
+                {
+                  "id": 36,
+                  "country": "Australia",
+                  "rev_usd_bn": 0.59
+                },
+                {
+                  "id": 76,
+                  "country": "Brazil",
+                  "rev_usd_bn": 0.49
+                }
               ]
             },
             "key": "id",
-            "fields": ["country", "share"]
+            "fields": [
+              "country",
+              "rev_usd_bn"
+            ]
           }
         }
       ],
-      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.4},
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 0.4
+      },
       "encoding": {
         "color": {
-          "field": "share",
+          "field": "rev_usd_bn",
           "type": "quantitative",
-          "title": "K-pop share of streams (%)",
-          "scale": {"scheme": "reds", "domainMin": 0},
-          "condition": {"test": "datum.share == null", "value": "#eaeaea"}
+          "title": "Recorded-music revenue (USD bn)",
+          "scale": {
+            "scheme": "reds",
+            "domainMin": 0
+          },
+          "condition": {
+            "test": "datum.rev_usd_bn == null",
+            "value": "#eaeaea"
+          }
         },
         "tooltip": [
-          {"field": "country", "title": "Country"},
-          {"field": "share", "title": "K-pop share %"}
+          {
+            "field": "country",
+            "title": "Country"
+          },
+          {
+            "field": "rev_usd_bn",
+            "title": "Revenue USD bn",
+            "format": ".2f"
+          }
         ]
       }
     }
   ],
-  "config": {"view": {"stroke": null}}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
 }

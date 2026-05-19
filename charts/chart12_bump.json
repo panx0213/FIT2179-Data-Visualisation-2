@@ -1,89 +1,130 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "The Ever-Shifting Top 5",
-    "subtitle": "Yearly rank of the most-streamed K-pop acts in Australia (1 = top) — PLACEHOLDER DATA",
+    "text": "The Top K-pop Acts in Australia",
+    "subtitle": "Cumulative Spotify Australia streams for K-pop acts (top tracks aggregated, May 2026 snapshot). Source: kworb.net AU weekly totals.",
     "anchor": "start",
     "fontSize": 18,
     "subtitleFontSize": 12,
     "subtitleColor": "#666"
   },
   "width": "container",
-  "height": 340,
-  "autosize": {"type": "fit-x", "contains": "padding"},
+  "height": 360,
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    }
+  },
   "data": {
     "values": [
-      {"year": 2020, "group": "BTS",         "rank": 1},
-      {"year": 2020, "group": "BLACKPINK",   "rank": 2},
-      {"year": 2020, "group": "TWICE",       "rank": 3},
-      {"year": 2020, "group": "Stray Kids",  "rank": 6},
-      {"year": 2020, "group": "NewJeans",    "rank": 12},
-      {"year": 2020, "group": "SEVENTEEN",   "rank": 7},
-
-      {"year": 2021, "group": "BTS",         "rank": 1},
-      {"year": 2021, "group": "BLACKPINK",   "rank": 2},
-      {"year": 2021, "group": "TWICE",       "rank": 4},
-      {"year": 2021, "group": "Stray Kids",  "rank": 5},
-      {"year": 2021, "group": "NewJeans",    "rank": 12},
-      {"year": 2021, "group": "SEVENTEEN",   "rank": 6},
-
-      {"year": 2022, "group": "BTS",         "rank": 1},
-      {"year": 2022, "group": "BLACKPINK",   "rank": 2},
-      {"year": 2022, "group": "TWICE",       "rank": 4},
-      {"year": 2022, "group": "Stray Kids",  "rank": 3},
-      {"year": 2022, "group": "NewJeans",    "rank": 5},
-      {"year": 2022, "group": "SEVENTEEN",   "rank": 6},
-
-      {"year": 2023, "group": "BTS",         "rank": 3},
-      {"year": 2023, "group": "BLACKPINK",   "rank": 4},
-      {"year": 2023, "group": "TWICE",       "rank": 5},
-      {"year": 2023, "group": "Stray Kids",  "rank": 2},
-      {"year": 2023, "group": "NewJeans",    "rank": 1},
-      {"year": 2023, "group": "SEVENTEEN",   "rank": 6},
-
-      {"year": 2024, "group": "BTS",         "rank": 5},
-      {"year": 2024, "group": "BLACKPINK",   "rank": 6},
-      {"year": 2024, "group": "TWICE",       "rank": 7},
-      {"year": 2024, "group": "Stray Kids",  "rank": 2},
-      {"year": 2024, "group": "NewJeans",    "rank": 1},
-      {"year": 2024, "group": "SEVENTEEN",   "rank": 4},
-
-      {"year": 2025, "group": "BTS",         "rank": 8},
-      {"year": 2025, "group": "BLACKPINK",   "rank": 5},
-      {"year": 2025, "group": "TWICE",       "rank": 6},
-      {"year": 2025, "group": "Stray Kids",  "rank": 3},
-      {"year": 2025, "group": "NewJeans",    "rank": 1},
-      {"year": 2025, "group": "SEVENTEEN",   "rank": 4}
+      {
+        "artist": "HUNTR/X",
+        "streams": 145360648
+      },
+      {
+        "artist": "ROSÉ",
+        "streams": 84143572
+      },
+      {
+        "artist": "BTS",
+        "streams": 35854452
+      },
+      {
+        "artist": "BLACKPINK",
+        "streams": 24979332
+      },
+      {
+        "artist": "TWICE",
+        "streams": 20469594
+      },
+      {
+        "artist": "NewJeans",
+        "streams": 19477497
+      },
+      {
+        "artist": "JENNIE",
+        "streams": 14888477
+      },
+      {
+        "artist": "Jung Kook",
+        "streams": 8069935
+      },
+      {
+        "artist": "LISA",
+        "streams": 4781043
+      },
+      {
+        "artist": "ILLIT",
+        "streams": 4388579
+      }
     ]
   },
   "layer": [
     {
-      "mark": {"type": "line", "interpolate": "monotone", "strokeWidth": 3, "point": {"size": 90, "filled": true}},
+      "mark": {
+        "type": "bar",
+        "color": "#e94560",
+        "cornerRadiusEnd": 3
+      },
       "encoding": {
-        "x": {"field": "year", "type": "ordinal", "title": "Year", "axis": {"labelAngle": 0}},
         "y": {
-          "field": "rank",
-          "type": "quantitative",
-          "title": "Rank",
-          "scale": {"reverse": true, "domain": [1, 12]},
-          "axis": {"values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]}
-        },
-        "color": {
-          "field": "group",
+          "field": "artist",
           "type": "nominal",
-          "title": "Group",
-          "scale": {
-            "domain": ["BTS", "BLACKPINK", "TWICE", "Stray Kids", "NewJeans", "SEVENTEEN"],
-            "range": ["#9b59b6", "#e94560", "#f39c12", "#1a1a2e", "#16a085", "#3498db"]
+          "sort": "-x",
+          "title": null
+        },
+        "x": {
+          "field": "streams",
+          "type": "quantitative",
+          "title": "Total AU Spotify streams (top tracks)",
+          "axis": {
+            "format": "~s"
           }
         },
         "tooltip": [
-          {"field": "group", "title": "Group"},
-          {"field": "year", "title": "Year"},
-          {"field": "rank", "title": "Rank"}
+          {
+            "field": "artist",
+            "title": "Artist"
+          },
+          {
+            "field": "streams",
+            "title": "AU streams",
+            "format": ","
+          }
         ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "color": "#1a1a2e",
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "y": {
+          "field": "artist",
+          "type": "nominal",
+          "sort": "-x"
+        },
+        "x": {
+          "field": "streams",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "streams",
+          "format": ".2s"
+        }
       }
     }
   ],
-  "config": {"view": {"stroke": null}}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
 }

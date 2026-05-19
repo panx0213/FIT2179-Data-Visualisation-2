@@ -1,8 +1,7 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Each State Has Its Bias",
-    "subtitle": "Relative popularity of top K-pop groups by Australian state (PLACEHOLDER DATA)",
+    "subtitle": "Share of search interest among five top K-pop groups by Australian state (last 12 months). Source: Google Trends.",
     "anchor": "start",
     "fontSize": 18,
     "subtitleFontSize": 12,
@@ -10,79 +9,282 @@
   },
   "width": "container",
   "height": 280,
-  "autosize": {"type": "fit-x", "contains": "padding"},
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    }
+  },
   "data": {
     "values": [
-      {"state": "NSW", "group": "BTS",        "score": 82},
-      {"state": "NSW", "group": "BLACKPINK",  "score": 78},
-      {"state": "NSW", "group": "TWICE",      "score": 64},
-      {"state": "NSW", "group": "NewJeans",   "score": 71},
-      {"state": "NSW", "group": "Stray Kids", "score": 58},
-      {"state": "NSW", "group": "SEVENTEEN",  "score": 49},
-      {"state": "VIC", "group": "BTS",        "score": 79},
-      {"state": "VIC", "group": "BLACKPINK",  "score": 81},
-      {"state": "VIC", "group": "TWICE",      "score": 70},
-      {"state": "VIC", "group": "NewJeans",   "score": 76},
-      {"state": "VIC", "group": "Stray Kids", "score": 66},
-      {"state": "VIC", "group": "SEVENTEEN",  "score": 55},
-      {"state": "QLD", "group": "BTS",        "score": 68},
-      {"state": "QLD", "group": "BLACKPINK",  "score": 62},
-      {"state": "QLD", "group": "TWICE",      "score": 48},
-      {"state": "QLD", "group": "NewJeans",   "score": 55},
-      {"state": "QLD", "group": "Stray Kids", "score": 41},
-      {"state": "QLD", "group": "SEVENTEEN",  "score": 36},
-      {"state": "WA",  "group": "BTS",        "score": 74},
-      {"state": "WA",  "group": "BLACKPINK",  "score": 69},
-      {"state": "WA",  "group": "TWICE",      "score": 58},
-      {"state": "WA",  "group": "NewJeans",   "score": 63},
-      {"state": "WA",  "group": "Stray Kids", "score": 52},
-      {"state": "WA",  "group": "SEVENTEEN",  "score": 45},
-      {"state": "SA",  "group": "BTS",        "score": 63},
-      {"state": "SA",  "group": "BLACKPINK",  "score": 58},
-      {"state": "SA",  "group": "TWICE",      "score": 44},
-      {"state": "SA",  "group": "NewJeans",   "score": 51},
-      {"state": "SA",  "group": "Stray Kids", "score": 39},
-      {"state": "SA",  "group": "SEVENTEEN",  "score": 32},
-      {"state": "TAS", "group": "BTS",        "score": 52},
-      {"state": "TAS", "group": "BLACKPINK",  "score": 47},
-      {"state": "TAS", "group": "TWICE",      "score": 34},
-      {"state": "TAS", "group": "NewJeans",   "score": 42},
-      {"state": "TAS", "group": "Stray Kids", "score": 29},
-      {"state": "TAS", "group": "SEVENTEEN",  "score": 24},
-      {"state": "ACT", "group": "BTS",        "score": 85},
-      {"state": "ACT", "group": "BLACKPINK",  "score": 82},
-      {"state": "ACT", "group": "TWICE",      "score": 71},
-      {"state": "ACT", "group": "NewJeans",   "score": 79},
-      {"state": "ACT", "group": "Stray Kids", "score": 64},
-      {"state": "ACT", "group": "SEVENTEEN",  "score": 56},
-      {"state": "NT",  "group": "BTS",        "score": 44},
-      {"state": "NT",  "group": "BLACKPINK",  "score": 38},
-      {"state": "NT",  "group": "TWICE",      "score": 26},
-      {"state": "NT",  "group": "NewJeans",   "score": 31},
-      {"state": "NT",  "group": "Stray Kids", "score": 22},
-      {"state": "NT",  "group": "SEVENTEEN",  "score": 18}
+      {
+        "state": "NSW",
+        "group": "BTS",
+        "share": 33
+      },
+      {
+        "state": "NSW",
+        "group": "BLACKPINK",
+        "share": 10
+      },
+      {
+        "state": "NSW",
+        "group": "TWICE",
+        "share": 43
+      },
+      {
+        "state": "NSW",
+        "group": "NewJeans",
+        "share": 3
+      },
+      {
+        "state": "NSW",
+        "group": "Stray Kids",
+        "share": 11
+      },
+      {
+        "state": "VIC",
+        "group": "BTS",
+        "share": 32
+      },
+      {
+        "state": "VIC",
+        "group": "BLACKPINK",
+        "share": 10
+      },
+      {
+        "state": "VIC",
+        "group": "TWICE",
+        "share": 44
+      },
+      {
+        "state": "VIC",
+        "group": "NewJeans",
+        "share": 3
+      },
+      {
+        "state": "VIC",
+        "group": "Stray Kids",
+        "share": 11
+      },
+      {
+        "state": "ACT",
+        "group": "BTS",
+        "share": 34
+      },
+      {
+        "state": "ACT",
+        "group": "BLACKPINK",
+        "share": 10
+      },
+      {
+        "state": "ACT",
+        "group": "TWICE",
+        "share": 41
+      },
+      {
+        "state": "ACT",
+        "group": "NewJeans",
+        "share": 2
+      },
+      {
+        "state": "ACT",
+        "group": "Stray Kids",
+        "share": 13
+      },
+      {
+        "state": "WA",
+        "group": "BTS",
+        "share": 34
+      },
+      {
+        "state": "WA",
+        "group": "BLACKPINK",
+        "share": 10
+      },
+      {
+        "state": "WA",
+        "group": "TWICE",
+        "share": 42
+      },
+      {
+        "state": "WA",
+        "group": "NewJeans",
+        "share": 3
+      },
+      {
+        "state": "WA",
+        "group": "Stray Kids",
+        "share": 11
+      },
+      {
+        "state": "SA",
+        "group": "BTS",
+        "share": 33
+      },
+      {
+        "state": "SA",
+        "group": "BLACKPINK",
+        "share": 9
+      },
+      {
+        "state": "SA",
+        "group": "TWICE",
+        "share": 42
+      },
+      {
+        "state": "SA",
+        "group": "NewJeans",
+        "share": 3
+      },
+      {
+        "state": "SA",
+        "group": "Stray Kids",
+        "share": 13
+      },
+      {
+        "state": "NT",
+        "group": "BTS",
+        "share": 37
+      },
+      {
+        "state": "NT",
+        "group": "BLACKPINK",
+        "share": 8
+      },
+      {
+        "state": "NT",
+        "group": "TWICE",
+        "share": 41
+      },
+      {
+        "state": "NT",
+        "group": "NewJeans",
+        "share": 3
+      },
+      {
+        "state": "NT",
+        "group": "Stray Kids",
+        "share": 11
+      },
+      {
+        "state": "QLD",
+        "group": "BTS",
+        "share": 32
+      },
+      {
+        "state": "QLD",
+        "group": "BLACKPINK",
+        "share": 8
+      },
+      {
+        "state": "QLD",
+        "group": "TWICE",
+        "share": 45
+      },
+      {
+        "state": "QLD",
+        "group": "NewJeans",
+        "share": 2
+      },
+      {
+        "state": "QLD",
+        "group": "Stray Kids",
+        "share": 13
+      },
+      {
+        "state": "TAS",
+        "group": "BTS",
+        "share": 26
+      },
+      {
+        "state": "TAS",
+        "group": "BLACKPINK",
+        "share": 7
+      },
+      {
+        "state": "TAS",
+        "group": "TWICE",
+        "share": 49
+      },
+      {
+        "state": "TAS",
+        "group": "NewJeans",
+        "share": 2
+      },
+      {
+        "state": "TAS",
+        "group": "Stray Kids",
+        "share": 16
+      }
     ]
   },
-  "mark": {"type": "rect", "stroke": "white", "strokeWidth": 1},
+  "mark": {
+    "type": "rect",
+    "stroke": "white",
+    "strokeWidth": 1
+  },
   "encoding": {
-    "x": {"field": "group", "type": "nominal", "title": null, "axis": {"labelAngle": 0}},
+    "x": {
+      "field": "group",
+      "type": "nominal",
+      "title": null,
+      "axis": {
+        "labelAngle": 0
+      },
+      "sort": [
+        "TWICE",
+        "BTS",
+        "Stray Kids",
+        "BLACKPINK",
+        "NewJeans"
+      ]
+    },
     "y": {
       "field": "state",
       "type": "nominal",
       "title": null,
-      "sort": ["ACT", "VIC", "NSW", "WA", "QLD", "SA", "TAS", "NT"]
+      "sort": [
+        "VIC",
+        "NSW",
+        "SA",
+        "WA",
+        "ACT",
+        "QLD",
+        "NT",
+        "TAS"
+      ]
     },
     "color": {
-      "field": "score",
+      "field": "share",
       "type": "quantitative",
-      "title": "Popularity",
-      "scale": {"scheme": "reds", "domain": [0, 100]}
+      "title": "% of search interest",
+      "scale": {
+        "scheme": "reds"
+      }
     },
     "tooltip": [
-      {"field": "state", "title": "State"},
-      {"field": "group", "title": "Group"},
-      {"field": "score", "title": "Popularity"}
+      {
+        "field": "state",
+        "title": "State"
+      },
+      {
+        "field": "group",
+        "title": "Group"
+      },
+      {
+        "field": "share",
+        "title": "Share",
+        "format": ".0f"
+      }
     ]
   },
-  "config": {"view": {"stroke": null}}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json"
 }
