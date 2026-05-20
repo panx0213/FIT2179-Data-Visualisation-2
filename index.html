@@ -3,67 +3,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>K-pop in Australia | FIT2179 DV2</title>
+  <title>K-pop in Australia · A Quieter Wave Down Under</title>
+  <meta name="description" content="How K-pop grew from one sold-out Sydney showcase in 2015 to a #1 ARIA single and stadium tours in 2025 — a data story about Korean pop in Australia.">
 
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header class="hero">
+    <p class="eyebrow">FIT2179 · Data Visualisation 2</p>
     <h1>K-pop in Australia</h1>
     <p class="tagline">A Quieter Wave Down Under</p>
+    <p class="dek">In 2015, a not-yet-globally-famous BTS played the UNSW Roundhouse to about 2,500 fans. Ten years later, K-pop tracks held the ARIA #1 for weeks and TWICE sold out four arena nights across Sydney and Melbourne. This is the story of how Korean pop quietly built an Australian audience — and what the numbers say about who's listening, where, and to whom.</p>
   </header>
 
   <main>
 
     <section id="rise" class="story-section">
-      <h2>Act 1 · The Rise</h2>
-      <p>K-pop's growth in Australian Spotify charts from 2015 to 2025.</p>
+      <p class="act-label">Act 1</p>
+      <h2>The Rise</h2>
+
+      <p class="lead">Australia was a late market for K-pop. The first major Korean tours arrived in 2015 — BTS's <em>Red Bullet</em> sold out two theatres in Sydney and Melbourne, and three months later Big Bang's <em>Made</em> tour booked Qudos Bank Arena twice over and Rod Laver Arena once, grossing US$5.8 million across three nights. At the time, it was the highest-grossing Korean tour ever in Australia.</p>
+
+      <p>What followed is a steep, uneven climb. KCON Sydney in 2017 brought EXO, Wanna One and Monsta X to a single arena weekend. Day6, iKON, GOT7 and BLACKPINK all booked Australian dates in 2018–2019. Then the COVID-19 border closure froze international touring for three full years. The wave returned harder than it left: 2023 alone saw 13 Australian shows from Stray Kids, TWICE and BLACKPINK, including TWICE's spillover encore at Marvel Stadium — the first K-pop stadium concert ever held in Australia. By 2025, four-show arena runs were the new baseline.</p>
+
       <div id="chart1" class="chart"></div>
+
+      <p>The second chart zooms in on what's actually streaming today. As of mid-2026, Australia's top K-pop tracks on Spotify are dominated by two phenomena: the <em>K-pop Demon Hunters</em> soundtrack — four tracks by the fictional group HUNTR/X — and ROSÉ's solo single <em>APT.</em>, the highest-streamed K-pop track in Australia ever. Behind them sit the predictable HYBE and YG repertoire, with a single ILLIT track squeezing into the top 24.</p>
+
       <div id="chart2" class="chart"></div>
+
+      <p class="transition">So K-pop has clearly arrived. But where in Australia has it actually landed?</p>
     </section>
 
     <section id="map" class="story-section">
-      <h2>Act 2 · The Map</h2>
-      <p>Which Australian states are most into K-pop?</p>
+      <p class="act-label">Act 2</p>
+      <h2>The Map</h2>
+
+      <p class="lead">Google Trends data for the last twelve months (May 2025–May 2026) shows that K-pop search interest is not concentrated in any one state. Victoria edges New South Wales for the top spot, and South Australia and Western Australia sit surprisingly close behind. Tasmania and the Northern Territory are the only regions noticeably below the national average.</p>
+
       <div id="chart3" class="chart"></div>
+
+      <p>The per-state share of search interest <em>between</em> the top five girl- and boy-groups is more revealing. TWICE — not BTS, not BLACKPINK — accounts for 41–49 % of group-level searches in every single state. BTS comes second everywhere (26–37 %), Stray Kids third (11–16 %), BLACKPINK fourth (7–10 %), and NewJeans last at 2–3 %.</p>
+
+      <p>This is unusual. TWICE rarely tops global K-pop search rankings, but in Australia they've toured the country three times since 2023 (including the Marvel Stadium show and a four-arena run in 2025), so the data is doing its job: it's reading the touring schedule.</p>
+
       <div id="chart4" class="chart"></div>
+
+      <p>Normalising for population finally tells the per-capita story. The ACT and Victoria over-index relative to their size; Queensland under-indexes despite hosting only two K-pop concerts in a decade. The bubble size shows what tour promoters already know — concert supply is heavily concentrated in NSW and Victoria.</p>
+
       <div id="chart5" class="chart"></div>
+
+      <p class="transition">Which raises the obvious question: <em>why</em> Sydney and Melbourne, and almost nowhere else?</p>
     </section>
 
     <section id="stages" class="story-section">
-      <h2>Act 3 · The Stages</h2>
-      <p>K-pop concert venues across Australia.</p>
+      <p class="act-label">Act 3</p>
+      <h2>The Stages</h2>
+
+      <p class="lead">Out of 58 documented K-pop concerts in Australia since 2015, 55 happened in just two cities. Sydney has hosted 29, Melbourne 26, Brisbane 2, Perth 1. Adelaide, Canberra, Hobart and Darwin have hosted zero major K-pop tour stops in a decade — even though Adelaide alone has the population of Tasmania, Canberra and Darwin combined.</p>
+
       <div id="chart6" class="chart"></div>
+
+      <p>The venue trajectory has scaled rapidly. Early shows played small theatres — UNSW Roundhouse (2,500), Festival Hall (5,500), Enmore Theatre (2,500). By 2017–2019 the wave had outgrown them and moved into Qudos Bank Arena (21,000) and Rod Laver Arena (14,820). In 2023 TWICE made the jump to Marvel Stadium (53,000), and in 2024 Stray Kids played both Marvel Stadium and Sydney's Allianz Stadium (42,500) back-to-back — the first K-pop act to do both Australian football stadiums on the same tour.</p>
+
       <div id="chart7" class="chart"></div>
+
+      <p class="transition">If the geography is concentrated, what about the sound itself? Is "K-pop" actually different from Western pop, or just culturally framed differently?</p>
     </section>
 
     <section id="sound" class="story-section">
-      <h2>Act 4 · The Sound</h2>
-      <p>What makes Australian-popular K-pop unique?</p>
+      <p class="act-label">Act 4</p>
+      <h2>The Sound</h2>
+
+      <p class="lead">Filtered to 377 tracks by verified Korean artists in a 114,000-track Spotify audio-features dataset, K-pop turns out to occupy a recognisable corner of the Spotify feature space — and it is genuinely different from what Australian radio calls "pop".</p>
+
+      <p>The first chart plots danceability against energy for one signature track per artist, K-pop versus Western pop. The K-pop cluster sits higher and to the right: denser, more rhythmic, more produced-for-choreography. The Western pop cluster spreads broader on energy but consistently sits a notch lower on danceability.</p>
+
       <div id="chart8" class="chart"></div>
+
+      <p>Averaged across all 377 K-pop tracks vs 1,000 Western pop tracks, six audio features capture the difference more cleanly. K-pop is measurably more danceable, very slightly less acoustic, and noticeably more <em>varied</em> in valence — the emotional register swings between bright and dark within a single song far more than Western pop allows.</p>
+
       <div id="chart9" class="chart"></div>
+
+      <p>The most concrete difference is just runtime. K-pop tracks cluster around three minutes; Western pop hits cluster around three-and-a-half to four. K-pop is engineered for the streaming era — short enough that listeners replay rather than skip, dense enough that the chorus arrives quickly.</p>
+
       <div id="chart10" class="chart"></div>
+
+      <p class="transition">All of which makes K-pop a fundamentally export-ready product. So how does Australia rank in the global market it exports to?</p>
     </section>
 
     <section id="world" class="story-section">
-      <h2>Act 5 · The World</h2>
-      <p>Australia's place in the global K-pop landscape.</p>
+      <p class="act-label">Act 5</p>
+      <h2>The World</h2>
+
+      <p class="lead">Australia is the world's ninth-largest recorded-music market, worth roughly US$590 million in 2024 according to IFPI's <em>Global Music Report</em>. South Korea — the entire production base of K-pop — sits two places above at #7 (US$1.10 billion), behind France and ahead of Canada. The United States dwarfs both at $17.7 billion.</p>
+
       <div id="chart11" class="chart"></div>
+
+      <p>Australia, then, is comparable in scale to the country exporting K-pop in the first place. That's a useful context for the final chart: who actually wins in Australia? Cumulative Australian Spotify streams for the top K-pop acts — totaled across each act's charting tracks on kworb.net's all-time weekly chart — produce a ranking that contains a few surprises.</p>
+
       <div id="chart12" class="chart"></div>
+
+      <p>HUNTR/X tops the list because the <em>K-pop Demon Hunters</em> film soundtrack put four of its tracks deep into the ARIA charts in late 2025 — together they pull 145 million streams. ROSÉ's solo single <em>APT.</em> alone has 84 million. BTS, BLACKPINK as a group, TWICE and NewJeans round out the top six. SM Entertainment artists — aespa, Red Velvet, NCT — are completely absent from the chart, despite huge global numbers. The Australian market clearly favours HYBE and YG.</p>
+    </section>
+
+    <section id="conclusion" class="story-section">
+      <h2>Takeaways</h2>
+      <ul class="takeaways">
+        <li><strong>The wave is real but late.</strong> Korean pop was virtually absent from Australia until 2015, took off around 2017–2019, paused for COVID, then exploded after 2023.</li>
+        <li><strong>Sydney and Melbourne own it.</strong> 94 % of K-pop concerts happen in two cities. Brisbane and Perth get token stops; the rest of the country is a desert.</li>
+        <li><strong>TWICE leads in search, but a soundtrack leads in streams.</strong> Touring drives search; an animated film drives plays. Both are real and very different signals.</li>
+        <li><strong>Australia favours HYBE and YG.</strong> Not a single SM Entertainment artist appears in the top 30 of Australian K-pop streams — a striking absence given SM's global weight.</li>
+        <li><strong>K-pop is engineered to travel.</strong> Shorter, denser, more danceable songs than Western pop — built for streaming, choreography, and short-form video.</li>
+      </ul>
+      <p class="closing">Australia isn't in K-pop's top-10 streaming markets, but the gap between fan reality and headline coverage is narrower than the global numbers suggest. A 27-million-person market where a soundtrack from an animated film can hold ARIA #1 for weeks is not a quiet market — it just sings to itself.</p>
     </section>
 
   </main>
 
   <footer>
-    <p>By <strong>Xuehai Pan</strong> · FIT2179 Data Visualisation 2 · Monash University · 2026</p>
-    <p>Data sources: kworb.net, Google Trends, ARIA, Kaggle, Setlist.fm, ABS, Luminate</p>
-    <p><a href="https://github.com/panx0213/FIT2179-Data-Visualisation-2">View on GitHub</a></p>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-title">About this visualisation</p>
+        <p>FIT2179 Data Visualisation 2 · Monash University · Semester 1, 2026 · Submitted 29 May 2026</p>
+        <p>By <strong>Xuehai Pan</strong> (Student ID 36388793). Built with Vega-Lite 5, Pure.css and vanilla HTML/JS.</p>
+      </div>
+      <div>
+        <p class="footer-title">Data sources</p>
+        <ul>
+          <li><a href="https://kworb.net/spotify/country/au_weekly_totals.html">kworb.net — Australian Spotify weekly totals</a></li>
+          <li><a href="https://trends.google.com/trends/explore?geo=AU&amp;q=kpop">Google Trends Australia</a></li>
+          <li><a href="https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/latest-release">Australian Bureau of Statistics — Sep 2025 population</a></li>
+          <li><a href="https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset">Spotify Tracks Dataset (Kaggle, 114k tracks)</a></li>
+          <li><a href="https://www.ifpi.org/our-industry/industry-data/">IFPI Global Music Report 2024</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Category:K-pop_concert_tours">Wikipedia tour pages (Born Pink, Ready to Be, Maniac, Dominate, In Your Area, Wings, Made, Red Bullet, …)</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Repository</p>
+        <p><a href="https://github.com/panx0213/FIT2179-Data-Visualisation-2">github.com/panx0213/FIT2179-Data-Visualisation-2</a></p>
+        <p class="ai-ack">Generative AI was used for code assistance, grammar review and data-source identification, in line with Monash University guidelines. All charts use real-world data; no values are fabricated.</p>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
