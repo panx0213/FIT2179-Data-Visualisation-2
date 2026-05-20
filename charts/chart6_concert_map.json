@@ -1,7 +1,7 @@
 {
   "title": {
     "text": "Where the Lightsticks Glow",
-    "subtitle": "56 documented K-pop concerts in Australia, 2015–2025, coloured by label. Bubble size = venue capacity. Source: Wikipedia tour pages.",
+    "subtitle": "58 documented K-pop concerts in Australia, 2015–2025, coloured by label. Bubble size = venue capacity. Source: Wikipedia tour pages.",
     "anchor": "start",
     "fontSize": 18,
     "subtitleFontSize": 12,
@@ -103,6 +103,30 @@
             "lon": 144.9789,
             "lat": -37.8217,
             "capacity": 14820
+          },
+          {
+            "date": "2016-08-27",
+            "artist": "SEVENTEEN",
+            "tour": "Shining Diamonds Tour",
+            "label": "HYBE",
+            "city": "Melbourne",
+            "state": "VIC",
+            "venue": "MCEC Plenary",
+            "lon": 144.9577,
+            "lat": -37.8252,
+            "capacity": 5500
+          },
+          {
+            "date": "2016-08-28",
+            "artist": "SEVENTEEN",
+            "tour": "Shining Diamonds Tour",
+            "label": "HYBE",
+            "city": "Sydney",
+            "state": "NSW",
+            "venue": "Luna Park Big Top",
+            "lon": 151.211,
+            "lat": -33.8485,
+            "capacity": 3000
           },
           {
             "date": "2017-04-20",

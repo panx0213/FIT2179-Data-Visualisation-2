@@ -64,19 +64,6 @@
         "genre": "K-pop"
       },
       {
-        "track": "First Class",
-        "artist": "Jack Harlow",
-        "popularity": 86,
-        "duration_s": 173.947,
-        "danceability": 0.905,
-        "energy": 0.563,
-        "valence": 0.324,
-        "acousticness": 0.0254,
-        "speechiness": 0.102,
-        "tempo": 106.998,
-        "genre": "K-pop"
-      },
-      {
         "track": "Dynamite",
         "artist": "BTS",
         "popularity": 85,
@@ -259,19 +246,6 @@
         "genre": "K-pop"
       },
       {
-        "track": "Megham Karukatha (From \"Thiruchitrambalam\")",
-        "artist": "Dhanush",
-        "popularity": 80,
-        "duration_s": 290.4,
-        "danceability": 0.429,
-        "energy": 0.614,
-        "valence": 0.743,
-        "acousticness": 0.513,
-        "speechiness": 0.0709,
-        "tempo": 149.966,
-        "genre": "K-pop"
-      },
-      {
         "track": "Permission to Dance",
         "artist": "BTS",
         "popularity": 80,
@@ -311,19 +285,6 @@
         "genre": "K-pop"
       },
       {
-        "track": "TOMBOY",
-        "artist": "(G)I-DLE",
-        "popularity": 80,
-        "duration_s": 174.386,
-        "danceability": 0.755,
-        "energy": 0.87,
-        "valence": 0.645,
-        "acousticness": 0.00988,
-        "speechiness": 0.0936,
-        "tempo": 124.032,
-        "genre": "K-pop"
-      },
-      {
         "track": "Life Goes On",
         "artist": "BTS",
         "popularity": 79,
@@ -347,19 +308,6 @@
         "acousticness": 0.0617,
         "speechiness": 0.111,
         "tempo": 119.978,
-        "genre": "K-pop"
-      },
-      {
-        "track": "First Class",
-        "artist": "Jack Harlow",
-        "popularity": 79,
-        "duration_s": 173.947,
-        "danceability": 0.902,
-        "energy": 0.582,
-        "valence": 0.332,
-        "acousticness": 0.111,
-        "speechiness": 0.109,
-        "tempo": 107.005,
         "genre": "K-pop"
       },
       {
@@ -412,6 +360,58 @@
         "acousticness": 0.00323,
         "speechiness": 0.0948,
         "tempo": 109.997,
+        "genre": "K-pop"
+      },
+      {
+        "track": "Tally",
+        "artist": "BLACKPINK",
+        "popularity": 78,
+        "duration_s": 184.248,
+        "danceability": 0.693,
+        "energy": 0.606,
+        "valence": 0.447,
+        "acousticness": 0.00817,
+        "speechiness": 0.0308,
+        "tempo": 129.942,
+        "genre": "K-pop"
+      },
+      {
+        "track": "For Youth",
+        "artist": "BTS",
+        "popularity": 78,
+        "duration_s": 264.48,
+        "danceability": 0.633,
+        "energy": 0.511,
+        "valence": 0.29,
+        "acousticness": 0.434,
+        "speechiness": 0.0368,
+        "tempo": 116.855,
+        "genre": "K-pop"
+      },
+      {
+        "track": "The Happiest Girl",
+        "artist": "BLACKPINK",
+        "popularity": 78,
+        "duration_s": 222.025,
+        "danceability": 0.439,
+        "energy": 0.352,
+        "valence": 0.548,
+        "acousticness": 0.587,
+        "speechiness": 0.057,
+        "tempo": 181.517,
+        "genre": "K-pop"
+      },
+      {
+        "track": "Polaroid Love",
+        "artist": "ENHYPEN",
+        "popularity": 78,
+        "duration_s": 184.601,
+        "danceability": 0.738,
+        "energy": 0.67,
+        "valence": 0.651,
+        "acousticness": 0.458,
+        "speechiness": 0.0439,
+        "tempo": 138.055,
         "genre": "K-pop"
       },
       {
