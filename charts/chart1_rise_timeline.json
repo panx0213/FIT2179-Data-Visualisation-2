@@ -28,7 +28,7 @@
         "values": [
           {
             "year": 2015,
-            "concerts": 0
+            "concerts": 5
           },
           {
             "year": 2016,
@@ -36,15 +36,15 @@
           },
           {
             "year": 2017,
-            "concerts": 2
+            "concerts": 8
           },
           {
             "year": 2018,
-            "concerts": 0
+            "concerts": 4
           },
           {
             "year": 2019,
-            "concerts": 0
+            "concerts": 10
           },
           {
             "year": 2020,
@@ -64,11 +64,11 @@
           },
           {
             "year": 2024,
-            "concerts": 2
+            "concerts": 4
           },
           {
             "year": 2025,
-            "concerts": 0
+            "concerts": 12
           }
         ]
       },
@@ -99,7 +99,7 @@
         "values": [
           {
             "year": 2015,
-            "concerts": 0
+            "concerts": 5
           },
           {
             "year": 2016,
@@ -107,15 +107,15 @@
           },
           {
             "year": 2017,
-            "concerts": 2
+            "concerts": 8
           },
           {
             "year": 2018,
-            "concerts": 0
+            "concerts": 4
           },
           {
             "year": 2019,
-            "concerts": 0
+            "concerts": 10
           },
           {
             "year": 2020,
@@ -135,11 +135,11 @@
           },
           {
             "year": 2024,
-            "concerts": 2
+            "concerts": 4
           },
           {
             "year": 2025,
-            "concerts": 0
+            "concerts": 12
           }
         ]
       },
@@ -165,7 +165,7 @@
         "values": [
           {
             "year": 2015,
-            "concerts": 0
+            "concerts": 5
           },
           {
             "year": 2016,
@@ -173,15 +173,15 @@
           },
           {
             "year": 2017,
-            "concerts": 2
+            "concerts": 8
           },
           {
             "year": 2018,
-            "concerts": 0
+            "concerts": 4
           },
           {
             "year": 2019,
-            "concerts": 0
+            "concerts": 10
           },
           {
             "year": 2020,
@@ -201,11 +201,11 @@
           },
           {
             "year": 2024,
-            "concerts": 2
+            "concerts": 4
           },
           {
             "year": 2025,
-            "concerts": 0
+            "concerts": 12
           }
         ]
       },
@@ -240,19 +240,29 @@
       "data": {
         "values": [
           {
+            "year": 2015,
+            "concerts": 6.5,
+            "label": "Big Bang's Made Tour — highest-grossing Korean tour at the time"
+          },
+          {
             "year": 2017,
-            "concerts": 3,
-            "label": "BTS Wings Tour — first major K-pop shows"
+            "concerts": 9.5,
+            "label": "KCON Australia + BTS Wings Tour"
           },
           {
             "year": 2023,
-            "concerts": 15,
-            "label": "TWICE plays Marvel Stadium — first K-pop stadium concert"
+            "concerts": 14.2,
+            "label": "TWICE at Marvel Stadium — first K-pop stadium concert in AU"
+          },
+          {
+            "year": 2024,
+            "concerts": 5.5,
+            "label": "Stray Kids — back-to-back Melbourne & Sydney stadium nights"
           },
           {
             "year": 2025,
-            "concerts": 1,
-            "label": "K-pop Demon Hunters OST hits ARIA #1"
+            "concerts": 13.5,
+            "label": "K-pop Demon Hunters OST tops ARIA charts"
           }
         ]
       },

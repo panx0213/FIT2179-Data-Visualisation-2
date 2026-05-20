@@ -28,25 +28,25 @@
         "state": "NSW",
         "pop_millions": 8.62,
         "interest": 95,
-        "concerts": 9
+        "concerts": 28
       },
       {
         "state": "VIC",
         "pop_millions": 7.1,
         "interest": 100,
-        "concerts": 8
+        "concerts": 25
       },
       {
         "state": "QLD",
         "pop_millions": 5.69,
         "interest": 79,
-        "concerts": 0
+        "concerts": 2
       },
       {
         "state": "WA",
         "pop_millions": 3.06,
         "interest": 91,
-        "concerts": 0
+        "concerts": 1
       },
       {
         "state": "SA",

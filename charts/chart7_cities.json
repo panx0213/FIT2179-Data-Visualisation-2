@@ -26,23 +26,23 @@
     "values": [
       {
         "city": "Sydney",
-        "concerts": 9,
-        "total_capacity": 177000
+        "concerts": 28,
+        "total_capacity": 429500
       },
       {
         "city": "Melbourne",
-        "concerts": 8,
-        "total_capacity": 149420
+        "concerts": 25,
+        "total_capacity": 338220
       },
       {
         "city": "Brisbane",
-        "concerts": 0,
-        "total_capacity": 0
+        "concerts": 2,
+        "total_capacity": 4700
       },
       {
         "city": "Perth",
-        "concerts": 0,
-        "total_capacity": 0
+        "concerts": 1,
+        "total_capacity": 2500
       },
       {
         "city": "Adelaide",
