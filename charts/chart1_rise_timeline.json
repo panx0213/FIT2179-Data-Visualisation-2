@@ -1,14 +1,14 @@
 {
   "title": {
     "text": "The K-pop Wave Reaches Australia",
-    "subtitle": "Cumulative number of documented K-pop concerts in Australia, 2015–2025 — pink bars show annual additions (n=58). Source: Wikipedia tour pages.",
+    "subtitle": "Documented K-pop concerts in Australia per year, 2015–2025 (n=58). Source: Wikipedia tour pages.",
     "anchor": "start",
     "fontSize": 18,
     "subtitleFontSize": 12,
     "subtitleColor": "#666"
   },
   "width": "container",
-  "height": 360,
+  "height": 340,
   "autosize": {
     "type": "fit-x",
     "contains": "padding"
@@ -22,65 +22,6 @@
       "titleFontSize": 12
     }
   },
-  "data": {
-    "values": [
-      {
-        "year": 2015,
-        "concerts": 5,
-        "cumulative": 5
-      },
-      {
-        "year": 2016,
-        "concerts": 2,
-        "cumulative": 7
-      },
-      {
-        "year": 2017,
-        "concerts": 8,
-        "cumulative": 15
-      },
-      {
-        "year": 2018,
-        "concerts": 4,
-        "cumulative": 19
-      },
-      {
-        "year": 2019,
-        "concerts": 10,
-        "cumulative": 29
-      },
-      {
-        "year": 2020,
-        "concerts": 0,
-        "cumulative": 29
-      },
-      {
-        "year": 2021,
-        "concerts": 0,
-        "cumulative": 29
-      },
-      {
-        "year": 2022,
-        "concerts": 0,
-        "cumulative": 29
-      },
-      {
-        "year": 2023,
-        "concerts": 13,
-        "cumulative": 42
-      },
-      {
-        "year": 2024,
-        "concerts": 4,
-        "cumulative": 46
-      },
-      {
-        "year": 2025,
-        "concerts": 12,
-        "cumulative": 58
-      }
-    ]
-  },
   "encoding": {
     "x": {
       "field": "year",
@@ -93,17 +34,67 @@
   },
   "layer": [
     {
+      "data": {
+        "values": [
+          {
+            "year": 2015,
+            "concerts": 5
+          },
+          {
+            "year": 2016,
+            "concerts": 2
+          },
+          {
+            "year": 2017,
+            "concerts": 8
+          },
+          {
+            "year": 2018,
+            "concerts": 4
+          },
+          {
+            "year": 2019,
+            "concerts": 10
+          },
+          {
+            "year": 2020,
+            "concerts": 0
+          },
+          {
+            "year": 2021,
+            "concerts": 0
+          },
+          {
+            "year": 2022,
+            "concerts": 0
+          },
+          {
+            "year": 2023,
+            "concerts": 13
+          },
+          {
+            "year": 2024,
+            "concerts": 4
+          },
+          {
+            "year": 2025,
+            "concerts": 12
+          }
+        ]
+      },
       "mark": {
         "type": "bar",
         "color": "#e94560",
-        "opacity": 0.45,
         "cornerRadiusEnd": 3
       },
       "encoding": {
         "y": {
           "field": "concerts",
           "type": "quantitative",
-          "title": "Concerts (bar = annual, line = cumulative)"
+          "title": "Concerts",
+          "axis": {
+            "tickMinStep": 1
+          }
         },
         "tooltip": [
           {
@@ -112,49 +103,7 @@
           },
           {
             "field": "concerts",
-            "title": "Concerts this year"
-          },
-          {
-            "field": "cumulative",
-            "title": "Cumulative total"
-          }
-        ]
-      }
-    },
-    {
-      "mark": {
-        "type": "line",
-        "color": "#1a1a2e",
-        "strokeWidth": 3,
-        "interpolate": "monotone"
-      },
-      "encoding": {
-        "y": {
-          "field": "cumulative",
-          "type": "quantitative"
-        }
-      }
-    },
-    {
-      "mark": {
-        "type": "point",
-        "color": "#1a1a2e",
-        "filled": true,
-        "size": 70
-      },
-      "encoding": {
-        "y": {
-          "field": "cumulative",
-          "type": "quantitative"
-        },
-        "tooltip": [
-          {
-            "field": "year",
-            "title": "Year"
-          },
-          {
-            "field": "cumulative",
-            "title": "Cumulative total"
+            "title": "Concerts"
           }
         ]
       }
@@ -164,40 +113,106 @@
         "values": [
           {
             "year": 2015,
-            "cumulative": 5,
+            "concerts": 5
+          },
+          {
+            "year": 2016,
+            "concerts": 2
+          },
+          {
+            "year": 2017,
+            "concerts": 8
+          },
+          {
+            "year": 2018,
+            "concerts": 4
+          },
+          {
+            "year": 2019,
+            "concerts": 10
+          },
+          {
+            "year": 2020,
+            "concerts": 0
+          },
+          {
+            "year": 2021,
+            "concerts": 0
+          },
+          {
+            "year": 2022,
+            "concerts": 0
+          },
+          {
+            "year": 2023,
+            "concerts": 13
+          },
+          {
+            "year": 2024,
+            "concerts": 4
+          },
+          {
+            "year": 2025,
+            "concerts": 12
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "color": "#1a1a2e",
+        "dy": -8,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "y": {
+          "field": "concerts",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "concerts"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": 2015,
+            "y": 5,
             "label": "Big Bang's Made Tour — first K-pop arena tour to AU"
           },
           {
             "year": 2017,
-            "cumulative": 15,
+            "y": 8,
             "label": "KCON Australia + BTS Wings Tour"
           },
           {
-            "year": 2020,
-            "cumulative": 29,
-            "label": "COVID-19 — international touring frozen for 3 years"
+            "year": 2021,
+            "y": 6,
+            "label": "COVID-19 — international touring frozen 2020–2022"
           },
           {
             "year": 2023,
-            "cumulative": 42,
+            "y": 13,
             "label": "TWICE first K-pop stadium concert at Marvel Stadium"
           },
           {
             "year": 2024,
-            "cumulative": 46,
-            "label": "Stray Kids — back-to-back Marvel & Allianz stadium nights"
+            "y": 4,
+            "label": "Stray Kids — Marvel & Allianz stadium back-to-back"
           },
           {
             "year": 2025,
-            "cumulative": 58,
-            "label": "K-pop Demon Hunters OST tops ARIA + TWICE 4-show arena run"
+            "y": 12,
+            "label": "TWICE 4-show arena run + Demon Hunters OST tops ARIA"
           }
         ]
       },
       "mark": {
         "type": "text",
         "align": "left",
-        "dx": 7,
+        "dx": -12,
+        "dy": -22,
         "fontWeight": "bold",
         "color": "#1a1a2e",
         "fontSize": 10.5
@@ -208,7 +223,7 @@
           "type": "ordinal"
         },
         "y": {
-          "field": "cumulative",
+          "field": "y",
           "type": "quantitative"
         },
         "text": {
