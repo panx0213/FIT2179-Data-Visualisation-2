@@ -10,7 +10,7 @@
   },
   "width": "container",
   "height": 460,
-  "padding": {"left": 24, "right": 24, "top": 8, "bottom": 8},
+  "padding": {"left": 32, "right": 32, "top": 8, "bottom": 8},
   "autosize": {"type": "fit-x", "contains": "padding"},
   "config": {
     "view": {"stroke": null},
@@ -72,7 +72,7 @@
         {"year": 2017, "y_start": 0, "y_end": 22},
         {"year": 2021, "y_start": 0, "y_end": 22},
         {"year": 2023, "y_start": 0, "y_end": 22},
-        {"year": 2024, "y_start": 0, "y_end": 22},
+        {"year": 2024, "y_start": 0, "y_end": 16},
         {"year": 2025, "y_start": 0, "y_end": 22}
       ]},
       "mark": {"type": "rule", "stroke": "#1a1a2e", "strokeWidth": 1, "strokeDash": [2, 3], "opacity": 0.35},
@@ -84,9 +84,9 @@
     },
     {
       "data": {"values": [
-        {"year": 2015, "label_y": 22, "label": "Big Bang's Made Tour\nfirst K-pop arena tour to AU"}
+        {"year": 2015, "label_y": 22, "label": "Big Bang Made Tour"}
       ]},
-      "mark": {"type": "text", "align": "left", "dx": -6, "baseline": "bottom", "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 10.5, "lineBreak": "\n"},
+      "mark": {"type": "text", "align": "left", "dx": -4, "baseline": "bottom", "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 11},
       "encoding": {
         "x": {"field": "year", "type": "ordinal"},
         "y": {"field": "label_y", "type": "quantitative"},
@@ -95,12 +95,12 @@
     },
     {
       "data": {"values": [
-        {"year": 2017, "label_y": 22, "label": "KCON Australia\n+ BTS Wings Tour"},
-        {"year": 2021, "label_y": 22, "label": "COVID-19 — touring\nfrozen 2020–2022"},
-        {"year": 2023, "label_y": 22, "label": "TWICE @ Marvel Stadium\nfirst K-pop stadium in AU"},
-        {"year": 2024, "label_y": 22, "label": "Stray Kids\nMarvel + Allianz stadium"}
+        {"year": 2017, "label_y": 22, "label": "KCON + BTS Wings"},
+        {"year": 2021, "label_y": 22, "label": "COVID-19 freeze"},
+        {"year": 2023, "label_y": 22, "label": "TWICE first stadium"},
+        {"year": 2024, "label_y": 16, "label": "Stray Kids stadiums"}
       ]},
-      "mark": {"type": "text", "align": "center", "baseline": "bottom", "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 10.5, "lineBreak": "\n"},
+      "mark": {"type": "text", "align": "center", "baseline": "bottom", "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 11},
       "encoding": {
         "x": {"field": "year", "type": "ordinal"},
         "y": {"field": "label_y", "type": "quantitative"},
@@ -109,9 +109,9 @@
     },
     {
       "data": {"values": [
-        {"year": 2025, "label_y": 22, "label": "Demon Hunters OST #1 ARIA\n+ TWICE 4-show arena run"}
+        {"year": 2025, "label_y": 22, "label": "Demon Hunters #1 ARIA"}
       ]},
-      "mark": {"type": "text", "align": "right", "dx": 6, "baseline": "bottom", "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 10.5, "lineBreak": "\n"},
+      "mark": {"type": "text", "align": "right", "dx": 4, "baseline": "bottom", "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 11},
       "encoding": {
         "x": {"field": "year", "type": "ordinal"},
         "y": {"field": "label_y", "type": "quantitative"},
