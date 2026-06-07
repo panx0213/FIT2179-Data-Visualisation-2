@@ -16,14 +16,17 @@ const charts = [
   { id: "chart12", spec: "charts/chart12_bump.json" },
 ];
 
+const CACHE_BUST = `?v=${Date.now()}`;
+
 function embedChart({ id, spec }) {
   const el = document.getElementById(id);
   if (!el) return;
 
-  vegaEmbed(`#${id}`, spec, {
+  vegaEmbed(`#${id}`, spec + CACHE_BUST, {
     actions: false,
     renderer: "svg",
-    mode: "vega-lite"
+    mode: "vega-lite",
+    loader: { http: { headers: { "Cache-Control": "no-cache" } } }
   })
     .then(({ view }) => {
       const ro = new ResizeObserver(() => {
