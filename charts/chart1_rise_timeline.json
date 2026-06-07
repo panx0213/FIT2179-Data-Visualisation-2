@@ -20,6 +20,14 @@
     "axis": {
       "labelFontSize": 11,
       "titleFontSize": 12
+    },
+    "legend": {
+      "orient": "bottom",
+      "titleFontSize": 12,
+      "labelFontSize": 11,
+      "padding": 12,
+      "offset": 12,
+      "columns": 0
     }
   },
   "encoding": {
