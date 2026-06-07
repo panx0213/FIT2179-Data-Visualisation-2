@@ -125,6 +125,9 @@
           "condition": {
             "test": "datum.rev_usd_bn == null",
             "value": "#eaeaea"
+          },
+          "legend": {
+            "orient": "bottom"
           }
         },
         "tooltip": [

@@ -276,6 +276,9 @@
       "title": "% of search interest",
       "scale": {
         "scheme": "reds"
+      },
+      "legend": {
+        "orient": "bottom"
       }
     },
     "tooltip": [

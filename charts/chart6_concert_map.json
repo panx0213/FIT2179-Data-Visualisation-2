@@ -797,6 +797,9 @@
               "#7f8c8d",
               "#27ae60"
             ]
+          },
+          "legend": {
+            "orient": "bottom"
           }
         },
         "tooltip": [

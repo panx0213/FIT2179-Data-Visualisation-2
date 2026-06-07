@@ -116,7 +116,10 @@
           }
         },
         "color": {
-          "value": "#e94560"
+          "value": "#e94560",
+          "legend": {
+            "orient": "bottom"
+          }
         },
         "tooltip": [
           {

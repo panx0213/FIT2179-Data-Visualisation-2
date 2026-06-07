@@ -114,6 +114,9 @@
               0,
               100
             ]
+          },
+          "legend": {
+            "orient": "bottom"
           }
         },
         "tooltip": [
