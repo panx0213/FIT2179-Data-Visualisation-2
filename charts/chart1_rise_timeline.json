@@ -9,7 +9,7 @@
     "subtitleColor": "#666"
   },
   "width": "container",
-  "height": 420,
+  "height": 460,
   "padding": {"left": 24, "right": 24, "top": 8, "bottom": 8},
   "autosize": {"type": "fit-x", "contains": "padding"},
   "config": {
@@ -18,9 +18,25 @@
     "legend": {"orient": "bottom", "titleFontSize": 12, "labelFontSize": 11, "padding": 12, "offset": 12, "columns": 0}
   },
   "encoding": {
-    "x": {"field": "year", "type": "ordinal", "title": "Year", "axis": {"labelAngle": 0}}
+    "x": {"field": "year", "type": "ordinal", "title": "Year", "axis": {"labelAngle": 0, "labelFontWeight": "bold"}}
   },
   "layer": [
+    {
+      "data": {"values": [
+        {"year": 2015, "label_y": 22},
+        {"year": 2017, "label_y": 22},
+        {"year": 2021, "label_y": 22},
+        {"year": 2023, "label_y": 22},
+        {"year": 2024, "label_y": 22},
+        {"year": 2025, "label_y": 22}
+      ]},
+      "mark": {"type": "rule", "stroke": "#1a1a2e", "strokeWidth": 1, "strokeDash": [2, 3], "opacity": 0.35},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"datum": 0, "type": "quantitative"},
+        "y2": {"field": "label_y"}
+      }
+    },
     {
       "data": {"values": [
         {"year": 2015, "concerts": 5},
@@ -41,8 +57,8 @@
           "field": "concerts",
           "type": "quantitative",
           "title": "Concerts",
-          "axis": {"tickMinStep": 1},
-          "scale": {"domain": [0, 20]}
+          "axis": {"tickMinStep": 1, "values": [0, 2, 4, 6, 8, 10, 12, 14]},
+          "scale": {"domain": [0, 24]}
         },
         "tooltip": [
           {"field": "year", "title": "Year"},
@@ -69,25 +85,9 @@
     },
     {
       "data": {"values": [
-        {"year": 2015, "bar_y": 5,  "label_y": 17.5},
-        {"year": 2017, "bar_y": 8,  "label_y": 17.5},
-        {"year": 2021, "bar_y": 0,  "label_y": 8.5},
-        {"year": 2023, "bar_y": 13, "label_y": 19},
-        {"year": 2024, "bar_y": 4,  "label_y": 11.5},
-        {"year": 2025, "bar_y": 12, "label_y": 18.5}
+        {"year": 2015, "label_y": 22, "label": "Big Bang's Made Tour\nfirst K-pop arena tour to AU"}
       ]},
-      "mark": {"type": "rule", "stroke": "#9a9aa0", "strokeWidth": 1, "strokeDash": [2, 3]},
-      "encoding": {
-        "x": {"field": "year", "type": "ordinal"},
-        "y": {"field": "bar_y", "type": "quantitative"},
-        "y2": {"field": "label_y"}
-      }
-    },
-    {
-      "data": {"values": [
-        {"year": 2015, "label_y": 17.5, "label": "Big Bang's Made Tour — first K-pop arena tour to AU"}
-      ]},
-      "mark": {"type": "text", "align": "left", "dx": -4, "dy": -8, "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 10.5, "lineBreak": "\n"},
+      "mark": {"type": "text", "align": "left", "dx": -6, "dy": 0, "baseline": "bottom", "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 10.5, "lineBreak": "\n", "lineHeight": 13},
       "encoding": {
         "x": {"field": "year", "type": "ordinal"},
         "y": {"field": "label_y", "type": "quantitative"},
@@ -96,11 +96,12 @@
     },
     {
       "data": {"values": [
-        {"year": 2017, "label_y": 17.5, "label": "KCON Australia + BTS Wings Tour"},
-        {"year": 2021, "label_y": 8.5,  "label": "COVID-19 — international touring frozen 2020–2022"},
-        {"year": 2023, "label_y": 19,   "label": "TWICE first K-pop stadium concert at Marvel Stadium"}
+        {"year": 2017, "label_y": 22, "label": "KCON Australia\n+ BTS Wings Tour"},
+        {"year": 2021, "label_y": 22, "label": "COVID-19 — touring\nfrozen 2020–2022"},
+        {"year": 2023, "label_y": 22, "label": "TWICE @ Marvel Stadium\nfirst K-pop stadium in AU"},
+        {"year": 2024, "label_y": 22, "label": "Stray Kids\nMarvel + Allianz stadium"}
       ]},
-      "mark": {"type": "text", "align": "center", "dy": -8, "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 10.5, "lineBreak": "\n"},
+      "mark": {"type": "text", "align": "center", "baseline": "bottom", "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 10.5, "lineBreak": "\n", "lineHeight": 13},
       "encoding": {
         "x": {"field": "year", "type": "ordinal"},
         "y": {"field": "label_y", "type": "quantitative"},
@@ -109,10 +110,9 @@
     },
     {
       "data": {"values": [
-        {"year": 2024, "label_y": 11.5, "label": "Stray Kids — Marvel & Allianz stadium back-to-back"},
-        {"year": 2025, "label_y": 18.5, "label": "Demon Hunters OST tops ARIA + TWICE 4-show arena run"}
+        {"year": 2025, "label_y": 22, "label": "Demon Hunters OST #1 ARIA\n+ TWICE 4-show arena run"}
       ]},
-      "mark": {"type": "text", "align": "right", "dx": 4, "dy": -8, "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 10.5, "lineBreak": "\n"},
+      "mark": {"type": "text", "align": "right", "dx": 6, "baseline": "bottom", "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 10.5, "lineBreak": "\n", "lineHeight": 13},
       "encoding": {
         "x": {"field": "year", "type": "ordinal"},
         "y": {"field": "label_y", "type": "quantitative"},
