@@ -104,7 +104,6 @@ main {
 }
 
 .story-section p {
-  max-width: 720px;
   font-size: 1.05rem;
   line-height: 1.75;
   color: var(--ink);
@@ -126,7 +125,6 @@ main {
   color: var(--muted);
   border-left: 3px solid var(--pink);
   padding-left: 1rem;
-  max-width: 640px;
 }
 
 /* ───────── Chart cards ───────── */
@@ -163,7 +161,6 @@ main {
   list-style: none;
   padding: 0;
   margin: 1.5rem 0;
-  max-width: 760px;
 }
 
 .takeaways li {
@@ -182,7 +179,6 @@ main {
 }
 
 .closing {
-  max-width: 720px;
   font-size: 1.1rem;
   font-style: italic;
   color: var(--muted);
