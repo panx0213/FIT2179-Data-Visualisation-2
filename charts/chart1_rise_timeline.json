@@ -1,4 +1,5 @@
 {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "The K-pop Wave Reaches Australia",
     "subtitle": "Documented K-pop concerts in Australia per year, 2015–2025 (n=58). Source: Wikipedia tour pages.",
@@ -8,243 +9,115 @@
     "subtitleColor": "#666"
   },
   "width": "container",
-  "height": 340,
-  "autosize": {
-    "type": "fit-x",
-    "contains": "padding"
-  },
+  "height": 420,
+  "padding": {"left": 24, "right": 24, "top": 8, "bottom": 8},
+  "autosize": {"type": "fit-x", "contains": "padding"},
   "config": {
-    "view": {
-      "stroke": null
-    },
-    "axis": {
-      "labelFontSize": 11,
-      "titleFontSize": 12
-    },
-    "legend": {
-      "orient": "bottom",
-      "titleFontSize": 12,
-      "labelFontSize": 11,
-      "padding": 12,
-      "offset": 12,
-      "columns": 0
-    }
+    "view": {"stroke": null},
+    "axis": {"labelFontSize": 11, "titleFontSize": 12},
+    "legend": {"orient": "bottom", "titleFontSize": 12, "labelFontSize": 11, "padding": 12, "offset": 12, "columns": 0}
   },
   "encoding": {
-    "x": {
-      "field": "year",
-      "type": "ordinal",
-      "title": "Year",
-      "axis": {
-        "labelAngle": 0
-      }
-    }
+    "x": {"field": "year", "type": "ordinal", "title": "Year", "axis": {"labelAngle": 0}}
   },
   "layer": [
     {
-      "data": {
-        "values": [
-          {
-            "year": 2015,
-            "concerts": 5
-          },
-          {
-            "year": 2016,
-            "concerts": 2
-          },
-          {
-            "year": 2017,
-            "concerts": 8
-          },
-          {
-            "year": 2018,
-            "concerts": 4
-          },
-          {
-            "year": 2019,
-            "concerts": 10
-          },
-          {
-            "year": 2020,
-            "concerts": 0
-          },
-          {
-            "year": 2021,
-            "concerts": 0
-          },
-          {
-            "year": 2022,
-            "concerts": 0
-          },
-          {
-            "year": 2023,
-            "concerts": 13
-          },
-          {
-            "year": 2024,
-            "concerts": 4
-          },
-          {
-            "year": 2025,
-            "concerts": 12
-          }
-        ]
-      },
-      "mark": {
-        "type": "bar",
-        "color": "#e94560",
-        "cornerRadiusEnd": 3
-      },
+      "data": {"values": [
+        {"year": 2015, "concerts": 5},
+        {"year": 2016, "concerts": 2},
+        {"year": 2017, "concerts": 8},
+        {"year": 2018, "concerts": 4},
+        {"year": 2019, "concerts": 10},
+        {"year": 2020, "concerts": 0},
+        {"year": 2021, "concerts": 0},
+        {"year": 2022, "concerts": 0},
+        {"year": 2023, "concerts": 13},
+        {"year": 2024, "concerts": 4},
+        {"year": 2025, "concerts": 12}
+      ]},
+      "mark": {"type": "bar", "color": "#e94560", "cornerRadiusEnd": 3},
       "encoding": {
         "y": {
           "field": "concerts",
           "type": "quantitative",
           "title": "Concerts",
-          "axis": {
-            "tickMinStep": 1
-          }
+          "axis": {"tickMinStep": 1},
+          "scale": {"domain": [0, 20]}
         },
         "tooltip": [
-          {
-            "field": "year",
-            "title": "Year"
-          },
-          {
-            "field": "concerts",
-            "title": "Concerts"
-          }
+          {"field": "year", "title": "Year"},
+          {"field": "concerts", "title": "Concerts"}
         ]
       }
     },
     {
-      "data": {
-        "values": [
-          {
-            "year": 2015,
-            "concerts": 5
-          },
-          {
-            "year": 2016,
-            "concerts": 2
-          },
-          {
-            "year": 2017,
-            "concerts": 8
-          },
-          {
-            "year": 2018,
-            "concerts": 4
-          },
-          {
-            "year": 2019,
-            "concerts": 10
-          },
-          {
-            "year": 2020,
-            "concerts": 0
-          },
-          {
-            "year": 2021,
-            "concerts": 0
-          },
-          {
-            "year": 2022,
-            "concerts": 0
-          },
-          {
-            "year": 2023,
-            "concerts": 13
-          },
-          {
-            "year": 2024,
-            "concerts": 4
-          },
-          {
-            "year": 2025,
-            "concerts": 12
-          }
-        ]
-      },
-      "mark": {
-        "type": "text",
-        "color": "#1a1a2e",
-        "dy": -8,
-        "fontWeight": "bold"
-      },
+      "data": {"values": [
+        {"year": 2015, "concerts": 5},
+        {"year": 2016, "concerts": 2},
+        {"year": 2017, "concerts": 8},
+        {"year": 2018, "concerts": 4},
+        {"year": 2019, "concerts": 10},
+        {"year": 2023, "concerts": 13},
+        {"year": 2024, "concerts": 4},
+        {"year": 2025, "concerts": 12}
+      ]},
+      "mark": {"type": "text", "color": "#1a1a2e", "dy": -8, "fontWeight": "bold", "fontSize": 11},
       "encoding": {
-        "y": {
-          "field": "concerts",
-          "type": "quantitative"
-        },
-        "text": {
-          "field": "concerts"
-        }
+        "y": {"field": "concerts", "type": "quantitative"},
+        "text": {"field": "concerts"}
       }
     },
     {
-      "data": {
-        "values": [
-          {
-            "year": 2015,
-            "y": 5,
-            "label": "Big Bang's Made Tour — first K-pop arena tour to AU"
-          },
-          {
-            "year": 2017,
-            "y": 8,
-            "label": "KCON Australia + BTS Wings Tour"
-          },
-          {
-            "year": 2021,
-            "y": 6,
-            "label": "COVID-19 — international touring frozen 2020–2022"
-          },
-          {
-            "year": 2023,
-            "y": 13,
-            "label": "TWICE first K-pop stadium concert at Marvel Stadium"
-          },
-          {
-            "year": 2024,
-            "y": 4,
-            "label": "Stray Kids — Marvel & Allianz stadium back-to-back"
-          },
-          {
-            "year": 2025,
-            "y": 12,
-            "label": "TWICE 4-show arena run + Demon Hunters OST tops ARIA"
-          }
-        ]
-      },
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "dx": -12,
-        "dy": -22,
-        "fontWeight": "bold",
-        "color": "#1a1a2e",
-        "fontSize": 10.5
-      },
+      "data": {"values": [
+        {"year": 2015, "bar_y": 5,  "label_y": 17.5},
+        {"year": 2017, "bar_y": 8,  "label_y": 17.5},
+        {"year": 2021, "bar_y": 0,  "label_y": 8.5},
+        {"year": 2023, "bar_y": 13, "label_y": 19},
+        {"year": 2024, "bar_y": 4,  "label_y": 11.5},
+        {"year": 2025, "bar_y": 12, "label_y": 18.5}
+      ]},
+      "mark": {"type": "rule", "stroke": "#9a9aa0", "strokeWidth": 1, "strokeDash": [2, 3]},
       "encoding": {
-        "x": {
-          "field": "year",
-          "type": "ordinal"
-        },
-        "y": {
-          "field": "y",
-          "type": "quantitative"
-        },
-        "text": {
-          "field": "label"
-        }
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "bar_y", "type": "quantitative"},
+        "y2": {"field": "label_y"}
+      }
+    },
+    {
+      "data": {"values": [
+        {"year": 2015, "label_y": 17.5, "label": "Big Bang's Made Tour — first K-pop arena tour to AU"}
+      ]},
+      "mark": {"type": "text", "align": "left", "dx": -4, "dy": -8, "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 10.5, "lineBreak": "\n"},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "label_y", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    },
+    {
+      "data": {"values": [
+        {"year": 2017, "label_y": 17.5, "label": "KCON Australia + BTS Wings Tour"},
+        {"year": 2021, "label_y": 8.5,  "label": "COVID-19 — international touring frozen 2020–2022"},
+        {"year": 2023, "label_y": 19,   "label": "TWICE first K-pop stadium concert at Marvel Stadium"}
+      ]},
+      "mark": {"type": "text", "align": "center", "dy": -8, "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 10.5, "lineBreak": "\n"},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "label_y", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    },
+    {
+      "data": {"values": [
+        {"year": 2024, "label_y": 11.5, "label": "Stray Kids — Marvel & Allianz stadium back-to-back"},
+        {"year": 2025, "label_y": 18.5, "label": "Demon Hunters OST tops ARIA + TWICE 4-show arena run"}
+      ]},
+      "mark": {"type": "text", "align": "right", "dx": 4, "dy": -8, "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 10.5, "lineBreak": "\n"},
+      "encoding": {
+        "x": {"field": "year", "type": "ordinal"},
+        "y": {"field": "label_y", "type": "quantitative"},
+        "text": {"field": "label"}
       }
     }
-  ],
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "padding": {
-    "left": 24,
-    "right": 24,
-    "top": 8,
-    "bottom": 8
-  }
+  ]
 }
