@@ -72,8 +72,8 @@
         {"year": 2017, "y_start": 0, "y_end": 22},
         {"year": 2021, "y_start": 0, "y_end": 22},
         {"year": 2023, "y_start": 0, "y_end": 22},
-        {"year": 2024, "y_start": 0, "y_end": 16},
-        {"year": 2025, "y_start": 0, "y_end": 22}
+        {"year": 2024, "y_start": 0, "y_end": 14},
+        {"year": 2025, "y_start": 0, "y_end": 18}
       ]},
       "mark": {"type": "rule", "stroke": "#1a1a2e", "strokeWidth": 1, "strokeDash": [2, 3], "opacity": 0.35},
       "encoding": {
@@ -98,7 +98,7 @@
         {"year": 2017, "label_y": 22, "label": "KCON + BTS Wings"},
         {"year": 2021, "label_y": 22, "label": "COVID-19 freeze"},
         {"year": 2023, "label_y": 22, "label": "TWICE first stadium"},
-        {"year": 2024, "label_y": 16, "label": "Stray Kids stadiums"}
+        {"year": 2024, "label_y": 14, "label": "Stray Kids stadiums"}
       ]},
       "mark": {"type": "text", "align": "center", "baseline": "bottom", "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 11},
       "encoding": {
@@ -109,7 +109,7 @@
     },
     {
       "data": {"values": [
-        {"year": 2025, "label_y": 22, "label": "Demon Hunters #1 ARIA"}
+        {"year": 2025, "label_y": 18, "label": "Demon Hunters #1 ARIA"}
       ]},
       "mark": {"type": "text", "align": "right", "dx": 4, "baseline": "bottom", "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 11},
       "encoding": {
