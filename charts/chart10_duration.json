@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "K-pop Songs Run Shorter than Western Pop",
-    "subtitle": "Smoothed duration distribution across 377 K-pop and 1,000 Western Pop tracks (Spotify Kaggle, density-normalised).",
+    "subtitle": "Song-duration distribution across 373 K-pop and 975 Western Pop tracks (Spotify Kaggle).",
     "anchor": "start",
     "fontSize": 18,
     "subtitleFontSize": 12,
@@ -5435,98 +5435,114 @@
   },
   "transform": [
     {
-      "filter": "datum.duration_s >= 60 && datum.duration_s <= 360"
+      "bin": {
+        "step": 15
+      },
+      "field": "duration_s",
+      "as": [
+        "bin_start",
+        "bin_end"
+      ]
     },
     {
-      "density": "duration_s",
+      "aggregate": [
+        {
+          "op": "count",
+          "as": "n"
+        }
+      ],
+      "groupby": [
+        "bin_start",
+        "bin_end",
+        "genre"
+      ]
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "n",
+          "as": "total"
+        }
+      ],
       "groupby": [
         "genre"
-      ],
-      "extent": [
-        60,
-        360
-      ],
-      "steps": 60,
-      "as": [
-        "duration_s",
-        "density"
       ]
-    }
-  ],
-  "layer": [
-    {
-      "mark": {
-        "type": "area",
-        "opacity": 0.45,
-        "interpolate": "monotone"
-      },
-      "encoding": {
-        "x": {
-          "field": "duration_s",
-          "type": "quantitative",
-          "title": "Duration (seconds)",
-          "scale": {
-            "domain": [
-              60,
-              360
-            ]
-          }
-        },
-        "y": {
-          "field": "density",
-          "type": "quantitative",
-          "title": "Density (share of tracks)"
-        },
-        "color": {
-          "field": "genre",
-          "type": "nominal",
-          "title": "Genre",
-          "scale": {
-            "domain": [
-              "K-pop",
-              "Western Pop"
-            ],
-            "range": [
-              "#e94560",
-              "#1a1a2e"
-            ]
-          },
-          "legend": {
-            "orient": "bottom"
-          }
-        }
-      }
     },
     {
-      "mark": {
-        "type": "line",
-        "interpolate": "monotone",
-        "strokeWidth": 2.5
-      },
-      "encoding": {
-        "x": {
-          "field": "duration_s",
-          "type": "quantitative"
-        },
-        "y": {
-          "field": "density",
-          "type": "quantitative"
-        },
-        "color": {
-          "field": "genre",
-          "type": "nominal",
-          "scale": {
-            "domain": [
-              "K-pop",
-              "Western Pop"
-            ],
-            "range": [
-              "#e94560",
-              "#1a1a2e"
-            ]
-          }
-        }
-      }
+      "calculate": "datum.n / datum.total * 100",
+      "as": "pct"
     }
-  ]
+  ],
+  "mark": {
+    "type": "bar",
+    "opacity": 0.85,
+    "cornerRadiusEnd": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "bin_start",
+      "type": "quantitative",
+      "title": "Duration (seconds)",
+      "bin": "binned",
+      "scale": {
+        "domain": [
+          60,
+          360
+        ]
+      }
+    },
+    "x2": {
+      "field": "bin_end"
+    },
+    "xOffset": {
+      "field": "genre",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "pct",
+      "type": "quantitative",
+      "title": "Share of tracks within genre (%)",
+      "axis": {
+        "format": ".0f"
+      }
+    },
+    "color": {
+      "field": "genre",
+      "type": "nominal",
+      "title": "Genre",
+      "scale": {
+        "domain": [
+          "K-pop",
+          "Western Pop"
+        ],
+        "range": [
+          "#e94560",
+          "#1a1a2e"
+        ]
+      },
+      "legend": {
+        "orient": "bottom"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "genre",
+        "title": "Genre"
+      },
+      {
+        "field": "bin_start",
+        "title": "Bin start (s)"
+      },
+      {
+        "field": "n",
+        "title": "Tracks"
+      },
+      {
+        "field": "pct",
+        "title": "% of genre",
+        "format": ".1f"
+      }
+    ]
+  }
 }
