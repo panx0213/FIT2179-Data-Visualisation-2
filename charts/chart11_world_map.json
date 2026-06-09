@@ -170,18 +170,18 @@
           },
           {
             "name": "Japan",
-            "lon": 138.0,
-            "lat": 36.0
+            "lon": 141.0,
+            "lat": 37.5
           },
           {
             "name": "UK",
-            "lon": -2.0,
-            "lat": 54.0
+            "lon": -5.0,
+            "lat": 57.0
           },
           {
             "name": "Germany",
-            "lon": 10.0,
-            "lat": 51.0
+            "lon": 11.0,
+            "lat": 51.5
           },
           {
             "name": "China",
@@ -191,12 +191,12 @@
           {
             "name": "France",
             "lon": 2.0,
-            "lat": 46.5
+            "lat": 47.5
           },
           {
             "name": "S. Korea",
-            "lon": 128.0,
-            "lat": 36.5
+            "lon": 124.0,
+            "lat": 41.5
           },
           {
             "name": "Canada",
