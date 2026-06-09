@@ -19,7 +19,12 @@
     },
     "axis": {
       "labelFontSize": 11,
-      "titleFontSize": 12
+      "titleFontSize": 12,
+      "labelColor": "#a89cb8",
+      "titleColor": "#f0e9f5",
+      "tickColor": "#3a2a55",
+      "domainColor": "#3a2a55",
+      "gridColor": "#26193e"
     },
     "legend": {
       "orient": "bottom",
@@ -27,7 +32,20 @@
       "labelFontSize": 11,
       "padding": 12,
       "offset": 12,
-      "columns": 0
+      "columns": 0,
+      "labelColor": "#a89cb8",
+      "titleColor": "#f0e9f5"
+    },
+    "background": "transparent",
+    "title": {
+      "color": "#f0e9f5",
+      "subtitleColor": "#a89cb8"
+    },
+    "header": {
+      "labelColor": "#f0e9f5",
+      "titleColor": "#f0e9f5",
+      "labelFontSize": 13,
+      "labelFontWeight": "bold"
     }
   },
   "data": {
@@ -141,8 +159,8 @@
           "Western Pop"
         ],
         "range": [
-          "#d92b6c",
-          "#2a1d3f"
+          "#ff3b8c",
+          "#f0e9f5"
         ]
       },
       "legend": {

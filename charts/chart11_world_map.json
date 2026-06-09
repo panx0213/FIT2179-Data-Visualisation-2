@@ -29,7 +29,29 @@
       "titleFontSize": 12,
       "labelFontSize": 11,
       "padding": 12,
-      "offset": 12
+      "offset": 12,
+      "labelColor": "#a89cb8",
+      "titleColor": "#f0e9f5"
+    },
+    "background": "transparent",
+    "axis": {
+      "labelColor": "#a89cb8",
+      "titleColor": "#f0e9f5",
+      "tickColor": "#3a2a55",
+      "domainColor": "#3a2a55",
+      "gridColor": "#26193e",
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "title": {
+      "color": "#f0e9f5",
+      "subtitleColor": "#a89cb8"
+    },
+    "header": {
+      "labelColor": "#f0e9f5",
+      "titleColor": "#f0e9f5",
+      "labelFontSize": 13,
+      "labelFontWeight": "bold"
     }
   },
   "projection": {
@@ -46,8 +68,8 @@
       },
       "mark": {
         "type": "geoshape",
-        "fill": "#eaeaea",
-        "stroke": "white",
+        "fill": "#2a1c44",
+        "stroke": "#3a2a55",
         "strokeWidth": 0.4
       }
     },
@@ -127,7 +149,7 @@
       ],
       "mark": {
         "type": "geoshape",
-        "stroke": "white",
+        "stroke": "#3a2a55",
         "strokeWidth": 0.4
       },
       "encoding": {
@@ -136,11 +158,18 @@
           "type": "quantitative",
           "title": "Recorded-music revenue (USD bn)",
           "scale": {
-            "scheme": "reds",
             "domain": [
               0,
               18
-            ]
+            ],
+            "range": [
+              "#3a1a4a",
+              "#7d2266",
+              "#c52a7e",
+              "#ff3b8c",
+              "#f4cd56"
+            ],
+            "interpolate": "hcl"
           },
           "legend": {
             "orient": "bottom",
@@ -219,7 +248,7 @@
         "type": "text",
         "fontSize": 13,
         "fontWeight": "bold",
-        "color": "#000"
+        "color": "#f0e9f5"
       },
       "encoding": {
         "longitude": {

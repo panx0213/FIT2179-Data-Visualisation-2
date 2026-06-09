@@ -20,17 +20,34 @@
     },
     "axis": {
       "labelFontSize": 11,
-      "titleFontSize": 12
+      "titleFontSize": 12,
+      "labelColor": "#a89cb8",
+      "titleColor": "#f0e9f5",
+      "tickColor": "#3a2a55",
+      "domainColor": "#3a2a55",
+      "gridColor": "#26193e"
     },
     "legend": {
-      "orient": "bottom"
+      "orient": "bottom",
+      "labelColor": "#a89cb8",
+      "titleColor": "#f0e9f5",
+      "titleFontSize": 12,
+      "labelFontSize": 11,
+      "padding": 12,
+      "offset": 12
     },
     "header": {
       "titleFontSize": 14,
-      "labelFontSize": 14,
+      "labelFontSize": 13,
       "labelFontWeight": "bold",
       "labelPadding": 8,
-      "labelColor": "#2a1d3f"
+      "labelColor": "#f0e9f5",
+      "titleColor": "#f0e9f5"
+    },
+    "background": "transparent",
+    "title": {
+      "color": "#f0e9f5",
+      "subtitleColor": "#a89cb8"
     }
   },
   "data": {
@@ -5466,7 +5483,7 @@
     "mark": {
       "type": "bar",
       "cornerRadiusEnd": 2,
-      "stroke": "white",
+      "stroke": "#3a2a55",
       "strokeWidth": 0.5
     },
     "encoding": {
@@ -5511,8 +5528,8 @@
             "Western Pop"
           ],
           "range": [
-            "#d92b6c",
-            "#2a1d3f"
+            "#ff3b8c",
+            "#f0e9f5"
           ]
         }
       },
