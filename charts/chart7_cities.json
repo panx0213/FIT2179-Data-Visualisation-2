@@ -68,7 +68,7 @@
     {
       "mark": {
         "type": "bar",
-        "color": "#e94560",
+        "color": "#d92b6c",
         "cornerRadiusEnd": 4
       },
       "encoding": {
@@ -108,7 +108,7 @@
         "type": "text",
         "align": "left",
         "dx": 6,
-        "color": "#1a1a2e",
+        "color": "#2a1d3f",
         "fontWeight": "bold"
       },
       "encoding": {

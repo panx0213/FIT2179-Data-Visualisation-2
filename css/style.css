@@ -5,13 +5,15 @@
 * { box-sizing: border-box; }
 
 :root {
-  --pink: #e94560;
-  --pink-soft: #ffe9ec;
-  --dark: #1a1a2e;
-  --ink: #222;
-  --muted: #5c6470;
-  --paper: #fafafa;
-  --rule: #e6e6ea;
+  --pink: #d92b6c;          /* primary — deeper magenta/berry */
+  --pink-soft: #fce4ed;
+  --plum: #6b2a5f;          /* mid-tone for gradients */
+  --dark: #2a1d3f;          /* warm plum-purple instead of cool navy */
+  --gold: #e9a93b;           /* secondary accent for highlights */
+  --ink: #2a1d3f;
+  --muted: #7a6c80;
+  --paper: #fbf7f3;           /* warm off-white */
+  --rule: #ebe3d8;
 }
 
 html {
@@ -34,7 +36,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(26, 26, 46, 0.94);
+  background: rgba(42, 29, 63, 0.94);
   backdrop-filter: saturate(140%) blur(10px);
   -webkit-backdrop-filter: saturate(140%) blur(10px);
   color: white;
@@ -93,7 +95,7 @@ h1, h2, h3, .eyebrow, .act-label, .footer-title, .takeaways strong {
 
 /* ───────── Hero ───────── */
 .hero {
-  background: linear-gradient(135deg, var(--dark) 0%, #2a1a4a 50%, var(--pink) 100%);
+  background: linear-gradient(135deg, var(--dark) 0%, var(--plum) 55%, var(--pink) 100%);
   color: white;
   padding: 5rem 2rem 5.5rem;
   text-align: center;

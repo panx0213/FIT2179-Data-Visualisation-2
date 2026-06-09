@@ -87,7 +87,7 @@
       "mark": {
         "type": "circle",
         "opacity": 0.75,
-        "stroke": "#1a1a2e",
+        "stroke": "#2a1d3f",
         "strokeWidth": 1
       },
       "encoding": {
@@ -116,7 +116,7 @@
           }
         },
         "color": {
-          "value": "#e94560",
+          "value": "#d92b6c",
           "legend": {
             "orient": "bottom"
           }
@@ -146,7 +146,7 @@
         "type": "text",
         "dy": -18,
         "fontWeight": "bold",
-        "color": "#1a1a2e"
+        "color": "#2a1d3f"
       },
       "encoding": {
         "x": {

@@ -32,7 +32,7 @@
         {"year": 2024, "concerts": 4},
         {"year": 2025, "concerts": 12}
       ]},
-      "mark": {"type": "bar", "color": "#e94560", "cornerRadiusEnd": 3},
+      "mark": {"type": "bar", "color": "#d92b6c", "cornerRadiusEnd": 3},
       "encoding": {
         "x": {"field": "year", "type": "ordinal", "title": "Year", "axis": {"labelAngle": 0, "labelFontWeight": "bold"}},
         "y": {
@@ -59,7 +59,7 @@
         {"year": 2024, "concerts": 4},
         {"year": 2025, "concerts": 12}
       ]},
-      "mark": {"type": "text", "color": "#1a1a2e", "dy": -8, "fontWeight": "bold", "fontSize": 11},
+      "mark": {"type": "text", "color": "#2a1d3f", "dy": -8, "fontWeight": "bold", "fontSize": 11},
       "encoding": {
         "x": {"field": "year", "type": "ordinal"},
         "y": {"field": "concerts", "type": "quantitative"},
@@ -75,7 +75,7 @@
         {"year": 2024, "y_start": 0, "y_end": 14},
         {"year": 2025, "y_start": 0, "y_end": 18}
       ]},
-      "mark": {"type": "rule", "stroke": "#1a1a2e", "strokeWidth": 1, "strokeDash": [2, 3], "opacity": 0.35},
+      "mark": {"type": "rule", "stroke": "#2a1d3f", "strokeWidth": 1, "strokeDash": [2, 3], "opacity": 0.35},
       "encoding": {
         "x": {"field": "year", "type": "ordinal"},
         "y": {"field": "y_start", "type": "quantitative"},
@@ -86,7 +86,7 @@
       "data": {"values": [
         {"year": 2015, "label_y": 22, "label": "Big Bang Made Tour"}
       ]},
-      "mark": {"type": "text", "align": "left", "dx": -4, "baseline": "bottom", "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 11},
+      "mark": {"type": "text", "align": "left", "dx": -4, "baseline": "bottom", "fontWeight": "bold", "color": "#2a1d3f", "fontSize": 11},
       "encoding": {
         "x": {"field": "year", "type": "ordinal"},
         "y": {"field": "label_y", "type": "quantitative"},
@@ -100,7 +100,7 @@
         {"year": 2023, "label_y": 22, "label": "TWICE first stadium"},
         {"year": 2024, "label_y": 14, "label": "Stray Kids stadiums"}
       ]},
-      "mark": {"type": "text", "align": "center", "baseline": "bottom", "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 11},
+      "mark": {"type": "text", "align": "center", "baseline": "bottom", "fontWeight": "bold", "color": "#2a1d3f", "fontSize": 11},
       "encoding": {
         "x": {"field": "year", "type": "ordinal"},
         "y": {"field": "label_y", "type": "quantitative"},
@@ -111,7 +111,7 @@
       "data": {"values": [
         {"year": 2025, "label_y": 18, "label": "Demon Hunters #1 ARIA"}
       ]},
-      "mark": {"type": "text", "align": "right", "dx": 4, "baseline": "bottom", "fontWeight": "bold", "color": "#1a1a2e", "fontSize": 11},
+      "mark": {"type": "text", "align": "right", "dx": 4, "baseline": "bottom", "fontWeight": "bold", "color": "#2a1d3f", "fontSize": 11},
       "encoding": {
         "x": {"field": "year", "type": "ordinal"},
         "y": {"field": "label_y", "type": "quantitative"},

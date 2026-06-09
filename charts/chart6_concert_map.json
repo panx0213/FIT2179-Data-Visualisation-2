@@ -753,7 +753,7 @@
       "mark": {
         "type": "circle",
         "opacity": 0.7,
-        "stroke": "#1a1a2e",
+        "stroke": "#2a1d3f",
         "strokeWidth": 1
       },
       "encoding": {
@@ -790,7 +790,7 @@
               "Multi"
             ],
             "range": [
-              "#e94560",
+              "#d92b6c",
               "#9b59b6",
               "#f39c12",
               "#3498db",
