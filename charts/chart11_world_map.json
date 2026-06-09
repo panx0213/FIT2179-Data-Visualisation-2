@@ -1,4 +1,5 @@
 {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "The Global Music Markets K-pop Has to Reach",
     "subtitle": "IFPI Global Music Report 2024 — recorded-music revenue (USD bn) for the world's top 10 markets. South Korea ranks 7th, Australia 9th.",
@@ -8,7 +9,13 @@
     "subtitleColor": "#666"
   },
   "width": "container",
-  "height": 420,
+  "height": 460,
+  "padding": {
+    "left": 24,
+    "right": 24,
+    "top": 8,
+    "bottom": 8
+  },
   "autosize": {
     "type": "fit-x",
     "contains": "padding"
@@ -17,23 +24,33 @@
     "view": {
       "stroke": null
     },
-    "axis": {
-      "labelFontSize": 11,
-      "titleFontSize": 12
-    },
     "legend": {
       "orient": "bottom",
       "titleFontSize": 12,
       "labelFontSize": 11,
       "padding": 12,
-      "offset": 12,
-      "columns": 0
+      "offset": 12
     }
   },
   "projection": {
     "type": "naturalEarth1"
   },
   "layer": [
+    {
+      "data": {
+        "url": "https://cdn.jsdelivr.net/npm/vega-datasets@2/data/world-110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#eaeaea",
+        "stroke": "white",
+        "strokeWidth": 0.4
+      }
+    },
     {
       "data": {
         "url": "https://cdn.jsdelivr.net/npm/vega-datasets@2/data/world-110m.json",
@@ -120,14 +137,14 @@
           "title": "Recorded-music revenue (USD bn)",
           "scale": {
             "scheme": "reds",
-            "domainMin": 0
-          },
-          "condition": {
-            "test": "datum.rev_usd_bn == null",
-            "value": "#eaeaea"
+            "domain": [
+              0,
+              18
+            ]
           },
           "legend": {
-            "orient": "bottom"
+            "orient": "bottom",
+            "tickCount": 5
           }
         },
         "tooltip": [
@@ -143,12 +160,5 @@
         ]
       }
     }
-  ],
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "padding": {
-    "left": 24,
-    "right": 24,
-    "top": 8,
-    "bottom": 8
-  }
+  ]
 }

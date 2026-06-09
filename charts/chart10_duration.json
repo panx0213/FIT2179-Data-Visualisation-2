@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "K-pop Songs Run Shorter than Western Pop",
-    "subtitle": "Song-duration distribution across 373 K-pop and 975 Western Pop tracks (Spotify Kaggle).",
+    "subtitle": "Song-duration distribution across 373 K-pop and 975 Western Pop tracks, normalised to share of each genre (Spotify Kaggle).",
     "anchor": "start",
     "fontSize": 18,
     "subtitleFontSize": 12,
@@ -39,1498 +39,6 @@
   },
   "data": {
     "values": [
-      {
-        "duration_s": 168.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 177.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 169.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 229.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 200.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 207.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 199.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 187.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 179.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 162.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 181.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 242.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 175.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 228.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 209.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 204.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 193.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 187.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 187.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 165.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 164.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 177.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 177.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 200.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 168.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 184.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 199.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 175.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 175.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 217.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 192.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 264.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 274.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 189.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 180.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 197.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 240.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 222.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 213.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 178.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 222.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 184.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 245.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 234.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 207.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 177.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 168.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 246.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 198.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 197.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 211.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 307.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 182.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 172.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 226.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 180.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 192.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 184.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 191.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 198.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 191.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 181.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 223.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 224.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 275.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 183.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 240.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 169.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 211.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 261.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 238.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 203.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 199.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 210.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 208.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 205.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 215.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 276.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 229.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 237.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 167.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 196.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 196.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 254.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 218.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 214.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 226.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 231.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 217.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 178.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 223.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 250.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 199.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 234.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 209.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 167.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 189.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 216.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 178.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 191.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 235.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 161.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 235.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 223.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 164.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 193.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 199.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 229.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 179.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 180.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 196.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 147.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 209.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 165.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 202.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 208.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 180.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 213.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 227.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 238.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 222.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 201.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 195.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 189.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 236.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 171.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 233.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 114.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 242.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 230.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 233.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 233.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 208.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 236.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 239.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 231.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 214.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 172.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 221.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 183.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 240.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 227.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 186.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 202.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 230.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 184.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 188.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 172.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 243.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 209.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 180.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 198.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 249.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 240.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 251.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 225.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 221.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 178.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 139.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 238.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 215.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 159.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 194.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 245.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 281.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 192.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 174.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 171.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 275.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 202.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 198.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 226.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 158.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 204.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 177.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 203.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 210.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 176.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 180.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 201.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 220.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 238.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 246.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 222.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 226.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 240.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 253.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 240.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 195.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 204.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 190.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 230.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 196.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 144.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 260.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 210.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 211.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 176.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 196.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 197.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 211.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 195.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 178.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 178.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 227.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 191.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 233.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 192.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 222.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 245.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 196.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 239.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 198.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 299.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 201.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 168.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 199.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 242.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 174.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 183.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 194.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 156.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 259.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 194.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 216.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 192.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 265.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 229.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 166.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 184.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 221.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 195.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 206.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 197.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 218.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 260.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 194.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 218.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 165.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 227.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 211.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 238.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 180.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 217.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 207.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 249.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 144.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 186.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 216.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 201.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 176.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 178.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 216.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 229.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 178.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 179.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 230.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 235.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 139.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 187.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 191.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 211.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 136.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 225.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 226.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 242.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 180.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 205.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 222.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 210.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 242.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 194.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 210.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 201.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 230.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 201.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 211.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 229.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 274.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 166.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 238.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 195.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 228.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 291.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 225.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 208.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 223.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 175.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 231.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 323.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 199.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 239.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 193.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 225.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 187.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 199.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 140.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 195.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 227.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 208.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 170.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 237.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 292.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 186.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 225.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 222.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 223.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 244.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 190.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 199.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 213.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 195.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 187.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 207.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 178.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 177.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 246.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 207.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 198.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 221.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 272.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 207.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 275.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 236.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 156.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 202.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 209.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 240.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 171.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 90.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 198.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 228.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 264.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 192.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 227.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 164.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 212.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 294.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 167.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 196.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 208.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 172.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 203.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 237.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 245.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 199.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 197.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 215.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 210.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 267.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 233.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 210.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 192.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 217.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 171.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 121.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 227.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 184.4,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 189.1,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 189.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 187.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 246.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 181.8,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 196.2,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 210.6,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 242.7,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 195.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 238.5,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 210.3,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 171.0,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 164.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 203.9,
-        "genre": "K-pop"
-      },
-      {
-        "duration_s": 209.5,
-        "genre": "K-pop"
-      },
       {
         "duration_s": 200.0,
         "genre": "Western Pop"
@@ -5430,38 +3938,1506 @@
       {
         "duration_s": 316.7,
         "genre": "Western Pop"
+      },
+      {
+        "duration_s": 168.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 177.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 169.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 229.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 200.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 207.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 199.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 187.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 179.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 162.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 181.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 242.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 175.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 228.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 209.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 204.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 193.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 187.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 187.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 165.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 164.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 177.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 177.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 200.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 168.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 184.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 199.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 175.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 175.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 217.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 192.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 264.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 274.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 189.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 180.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 197.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 240.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 222.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 213.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 178.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 222.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 184.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 245.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 234.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 207.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 177.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 168.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 246.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 198.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 197.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 211.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 307.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 182.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 172.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 226.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 180.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 192.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 184.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 191.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 198.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 191.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 181.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 223.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 224.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 275.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 183.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 240.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 169.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 211.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 261.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 238.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 203.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 199.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 210.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 208.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 205.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 215.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 276.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 229.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 237.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 167.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 196.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 196.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 254.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 218.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 214.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 226.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 231.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 217.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 178.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 223.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 250.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 199.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 234.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 209.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 167.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 189.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 216.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 178.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 191.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 235.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 161.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 235.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 223.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 164.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 193.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 199.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 229.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 179.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 180.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 196.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 147.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 209.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 165.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 202.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 208.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 180.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 213.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 227.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 238.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 222.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 201.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 195.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 189.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 236.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 171.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 233.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 114.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 242.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 230.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 233.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 233.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 208.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 236.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 239.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 231.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 214.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 172.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 221.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 183.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 240.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 227.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 186.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 202.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 230.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 184.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 188.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 172.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 243.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 209.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 180.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 198.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 249.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 240.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 251.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 225.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 221.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 178.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 139.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 238.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 215.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 159.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 194.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 245.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 281.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 192.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 174.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 171.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 275.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 202.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 198.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 226.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 158.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 204.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 177.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 203.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 210.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 176.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 180.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 201.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 220.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 238.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 246.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 222.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 226.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 240.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 253.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 240.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 195.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 204.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 190.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 230.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 196.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 144.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 260.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 210.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 211.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 176.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 196.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 197.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 211.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 195.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 178.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 178.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 227.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 191.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 233.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 192.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 222.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 245.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 196.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 239.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 198.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 299.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 201.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 168.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 199.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 242.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 174.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 183.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 194.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 156.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 259.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 194.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 216.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 192.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 265.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 229.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 166.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 184.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 221.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 195.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 206.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 197.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 218.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 260.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 194.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 218.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 165.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 227.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 211.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 238.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 180.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 217.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 207.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 249.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 144.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 186.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 216.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 201.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 176.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 178.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 216.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 229.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 178.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 179.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 230.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 235.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 139.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 187.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 191.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 211.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 136.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 225.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 226.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 242.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 180.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 205.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 222.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 210.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 242.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 194.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 210.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 201.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 230.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 201.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 211.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 229.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 274.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 166.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 238.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 195.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 228.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 291.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 225.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 208.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 223.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 175.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 231.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 323.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 199.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 239.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 193.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 225.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 187.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 199.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 140.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 195.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 227.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 208.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 170.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 237.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 292.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 186.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 225.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 222.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 223.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 244.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 190.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 199.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 213.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 195.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 187.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 207.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 178.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 177.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 246.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 207.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 198.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 221.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 272.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 207.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 275.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 236.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 156.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 202.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 209.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 240.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 171.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 90.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 198.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 228.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 264.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 192.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 227.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 164.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 212.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 294.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 167.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 196.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 208.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 172.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 203.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 237.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 245.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 199.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 197.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 215.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 210.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 267.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 233.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 210.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 192.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 217.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 171.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 121.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 227.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 184.4,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 189.1,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 189.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 187.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 246.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 181.8,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 196.2,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 210.6,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 242.7,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 195.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 238.5,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 210.3,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 171.0,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 164.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 203.9,
+        "genre": "K-pop"
+      },
+      {
+        "duration_s": 209.5,
+        "genre": "K-pop"
       }
     ]
   },
   "transform": [
     {
-      "bin": {
-        "step": 15
-      },
-      "field": "duration_s",
-      "as": [
-        "bin_start",
-        "bin_end"
-      ]
-    },
-    {
-      "aggregate": [
-        {
-          "op": "count",
-          "as": "n"
-        }
-      ],
-      "groupby": [
-        "bin_start",
-        "bin_end",
-        "genre"
-      ]
-    },
-    {
       "joinaggregate": [
         {
-          "op": "sum",
-          "field": "n",
+          "op": "count",
           "as": "total"
         }
       ],
@@ -5470,21 +5446,24 @@
       ]
     },
     {
-      "calculate": "datum.n / datum.total * 100",
-      "as": "pct"
+      "calculate": "1 / datum.total * 100",
+      "as": "weight"
     }
   ],
   "mark": {
     "type": "bar",
-    "opacity": 0.85,
-    "cornerRadiusEnd": 2
+    "opacity": 0.6,
+    "stroke": "white",
+    "strokeWidth": 0.5
   },
   "encoding": {
     "x": {
-      "field": "bin_start",
+      "field": "duration_s",
       "type": "quantitative",
+      "bin": {
+        "step": 15
+      },
       "title": "Duration (seconds)",
-      "bin": "binned",
       "scale": {
         "domain": [
           60,
@@ -5492,20 +5471,12 @@
         ]
       }
     },
-    "x2": {
-      "field": "bin_end"
-    },
-    "xOffset": {
-      "field": "genre",
-      "type": "nominal"
-    },
     "y": {
-      "field": "pct",
+      "aggregate": "sum",
+      "field": "weight",
       "type": "quantitative",
       "title": "Share of tracks within genre (%)",
-      "axis": {
-        "format": ".0f"
-      }
+      "stack": null
     },
     "color": {
       "field": "genre",
@@ -5513,17 +5484,21 @@
       "title": "Genre",
       "scale": {
         "domain": [
-          "K-pop",
-          "Western Pop"
+          "Western Pop",
+          "K-pop"
         ],
         "range": [
-          "#e94560",
-          "#1a1a2e"
+          "#1a1a2e",
+          "#e94560"
         ]
       },
       "legend": {
         "orient": "bottom"
       }
+    },
+    "order": {
+      "field": "genre",
+      "type": "nominal"
     },
     "tooltip": [
       {
@@ -5531,17 +5506,8 @@
         "title": "Genre"
       },
       {
-        "field": "bin_start",
-        "title": "Bin start (s)"
-      },
-      {
-        "field": "n",
-        "title": "Tracks"
-      },
-      {
-        "field": "pct",
-        "title": "% of genre",
-        "format": ".1f"
+        "aggregate": "count",
+        "title": "Tracks in bin"
       }
     ]
   }
