@@ -14,6 +14,10 @@
   --rule: #e6e6ea;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Source Serif 4", "Georgia", serif;
   margin: 0;
@@ -23,6 +27,64 @@ body {
   line-height: 1.65;
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
+}
+
+/* ───────── Sticky top navigation ───────── */
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(26, 26, 46, 0.94);
+  backdrop-filter: saturate(140%) blur(10px);
+  -webkit-backdrop-filter: saturate(140%) blur(10px);
+  color: white;
+  padding: 0.7rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  font-family: "Outfit", sans-serif;
+  font-size: 0.92rem;
+  box-shadow: 0 1px 12px rgba(0,0,0,0.06);
+}
+
+.topnav-brand {
+  font-weight: 800;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.topnav-brand:hover { color: var(--pink); }
+
+.topnav-links {
+  display: flex;
+  gap: 1.4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.topnav-links a {
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.18s ease, border-color 0.18s ease;
+  white-space: nowrap;
+}
+
+.topnav-links a:hover {
+  color: white;
+}
+
+.topnav-links a.active {
+  color: white;
+  border-bottom-color: var(--pink);
 }
 
 h1, h2, h3, .eyebrow, .act-label, .footer-title, .takeaways strong {
@@ -81,7 +143,7 @@ main {
 
 .story-section {
   margin: 4.5rem 0;
-  scroll-margin-top: 2rem;
+  scroll-margin-top: 5.5rem;
 }
 
 .story-section .act-label {
@@ -249,9 +311,19 @@ footer a:hover {
   main { padding: 1.5rem 1.2rem; }
   .hero { padding: 3rem 1.2rem 3.5rem; }
   .hero .dek { font-size: 1rem; }
-  .story-section { margin: 3rem 0; }
+  .story-section { margin: 3rem 0; scroll-margin-top: 8rem; }
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  .topnav {
+    padding: 0.6rem 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .topnav-links {
+    gap: 0.7rem 1rem;
+    font-size: 0.82rem;
   }
 }

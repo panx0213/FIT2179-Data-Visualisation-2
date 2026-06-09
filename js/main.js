@@ -36,6 +36,37 @@ function embedChart({ id, spec }) {
     .catch((err) => console.warn(`Chart ${id} failed (${spec}):`, err));
 }
 
+function setupSectionNav() {
+  const links = Array.from(document.querySelectorAll(".topnav-links a"));
+  if (!links.length) return;
+
+  const linkBySection = new Map();
+  links.forEach((a) => {
+    const href = a.getAttribute("href");
+    if (!href || !href.startsWith("#")) return;
+    const id = href.slice(1);
+    const target = document.getElementById(id);
+    if (target) linkBySection.set(target, a);
+  });
+
+  if (!linkBySection.size) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const link = linkBySection.get(entry.target);
+        if (!link) return;
+        links.forEach((a) => a.classList.toggle("active", a === link));
+      });
+    },
+    { rootMargin: "-30% 0px -55% 0px", threshold: 0 }
+  );
+
+  linkBySection.forEach((_, section) => observer.observe(section));
+}
+
 window.addEventListener("DOMContentLoaded", () => {
   charts.forEach(embedChart);
+  setupSectionNav();
 });
