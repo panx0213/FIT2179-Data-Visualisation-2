@@ -884,12 +884,7 @@
         "type": "text",
         "fontSize": 13,
         "fontWeight": "bold",
-        "fill": "#1a1a2e",
-        "stroke": "white",
-        "strokeWidth": 2,
-        "strokeJoin": "round",
-        "paintOrder": "stroke",
-        "strokeOpacity": 0.9
+        "color": "#000"
       },
       "encoding": {
         "longitude": {
