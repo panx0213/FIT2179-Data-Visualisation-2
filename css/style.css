@@ -43,7 +43,7 @@ h1, h2, h3, .eyebrow, .act-label, .footer-title, .takeaways strong {
 }
 
 strong { color: #ffffff; }
-em { color: var(--lavender); font-style: italic; }
+em { color: #f1c8ff; font-style: italic; }
 
 /* ───────── Sticky top navigation ───────── */
 .topnav {
