@@ -9,9 +9,9 @@
   --surface:   #1e1432;        /* card surface */
   --surface-2: #2a1c44;        /* deeper accent surface */
   --rule:      #3a2a55;
-  --ink:       #f0e9f5;        /* warm off-white text */
-  --muted:     #a89cb8;
-  --dim:       #6f6480;
+  --ink:       #f7f0fa;        /* warm off-white text */
+  --muted:     #d4c7e0;
+  --dim:       #8e80a0;
 
   --pink:      #ff3b8c;        /* primary — vibrant K-pop magenta */
   --pink-soft: rgba(255, 59, 140, 0.18);

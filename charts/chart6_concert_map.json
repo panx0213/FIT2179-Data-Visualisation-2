@@ -5,7 +5,7 @@
     "anchor": "start",
     "fontSize": 18,
     "subtitleFontSize": 12,
-    "subtitleColor": "#666"
+    "subtitleColor": "#d4c7e0"
   },
   "width": "container",
   "height": 520,
@@ -20,8 +20,8 @@
     "axis": {
       "labelFontSize": 11,
       "titleFontSize": 12,
-      "labelColor": "#a89cb8",
-      "titleColor": "#f0e9f5",
+      "labelColor": "#d4c7e0",
+      "titleColor": "#f7f0fa",
       "tickColor": "#3a2a55",
       "domainColor": "#3a2a55",
       "gridColor": "#26193e"
@@ -33,13 +33,13 @@
       "padding": 12,
       "offset": 12,
       "columns": 0,
-      "labelColor": "#a89cb8",
-      "titleColor": "#f0e9f5"
+      "labelColor": "#d4c7e0",
+      "titleColor": "#f7f0fa"
     },
     "background": "transparent",
     "title": {
-      "color": "#f0e9f5",
-      "subtitleColor": "#a89cb8"
+      "color": "#f7f0fa",
+      "subtitleColor": "#d4c7e0"
     },
     "header": {
       "labelColor": "#f0e9f5",
