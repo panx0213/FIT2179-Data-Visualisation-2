@@ -261,6 +261,83 @@
           "field": "name"
         }
       }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 90,
+            "lat": 18,
+            "label": "South Korea (#7 market)\n— K-pop's home base"
+          },
+          {
+            "lon": 100,
+            "lat": -45,
+            "label": "Australia (#9 market)\n— size of K-pop's birthplace"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontWeight": "bold",
+        "fontSize": 11.5,
+        "fill": "#f4cd56",
+        "lineBreak": "\n"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon"
+        },
+        "latitude": {
+          "field": "lat"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 90,
+            "lat": 18,
+            "lon2": 127.8,
+            "lat2": 36.5
+          },
+          {
+            "lon": 100,
+            "lat": -45,
+            "lon2": 134.0,
+            "lat2": -25.0
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "stroke": "#f4cd56",
+        "strokeWidth": 1,
+        "strokeDash": [
+          3,
+          3
+        ],
+        "opacity": 0.7
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon"
+        },
+        "latitude": {
+          "field": "lat"
+        },
+        "longitude2": {
+          "field": "lon2"
+        },
+        "latitude2": {
+          "field": "lat2"
+        }
+      }
     }
   ]
 }

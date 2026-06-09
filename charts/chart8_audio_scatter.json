@@ -702,84 +702,129 @@
       }
     ]
   },
-  "mark": {
-    "type": "circle",
-    "size": 120,
-    "opacity": 0.65,
-    "stroke": "#3a2a55",
-    "strokeWidth": 1
-  },
-  "encoding": {
-    "x": {
-      "field": "danceability",
-      "type": "quantitative",
-      "title": "Danceability (0–1)",
-      "scale": {
-        "domain": [
-          0,
-          1
-        ]
-      }
-    },
-    "y": {
-      "field": "energy",
-      "type": "quantitative",
-      "title": "Energy (0–1)",
-      "scale": {
-        "domain": [
-          0,
-          1
-        ]
-      }
-    },
-    "color": {
-      "field": "genre",
-      "type": "nominal",
-      "title": "Genre",
-      "scale": {
-        "domain": [
-          "K-pop",
-          "Western Pop"
-        ],
-        "range": [
-          "#ff3b8c",
-          "#f0e9f5"
-        ]
-      },
-      "legend": {
-        "orient": "bottom"
-      }
-    },
-    "tooltip": [
-      {
-        "field": "track",
-        "title": "Track"
-      },
-      {
-        "field": "artist",
-        "title": "Artist"
-      },
-      {
-        "field": "genre",
-        "title": "Genre"
-      },
-      {
-        "field": "danceability",
-        "title": "Danceability",
-        "format": ".2f"
-      },
-      {
-        "field": "energy",
-        "title": "Energy",
-        "format": ".2f"
-      }
-    ]
-  },
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "padding": {
     "left": 24,
     "right": 24,
     "top": 8,
     "bottom": 8
-  }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "size": 120,
+        "opacity": 0.65,
+        "stroke": "#3a2a55",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "danceability",
+          "type": "quantitative",
+          "title": "Danceability (0–1)",
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          }
+        },
+        "y": {
+          "field": "energy",
+          "type": "quantitative",
+          "title": "Energy (0–1)",
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          }
+        },
+        "color": {
+          "field": "genre",
+          "type": "nominal",
+          "title": "Genre",
+          "scale": {
+            "domain": [
+              "K-pop",
+              "Western Pop"
+            ],
+            "range": [
+              "#ff3b8c",
+              "#f0e9f5"
+            ]
+          },
+          "legend": {
+            "orient": "bottom"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "track",
+            "title": "Track"
+          },
+          {
+            "field": "artist",
+            "title": "Artist"
+          },
+          {
+            "field": "genre",
+            "title": "Genre"
+          },
+          {
+            "field": "danceability",
+            "title": "Danceability",
+            "format": ".2f"
+          },
+          {
+            "field": "energy",
+            "title": "Energy",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "danceability": 0.92,
+            "energy": 0.96,
+            "label": "K-pop:"
+          },
+          {
+            "danceability": 0.92,
+            "energy": 0.92,
+            "label": "denser, higher dance,"
+          },
+          {
+            "danceability": 0.92,
+            "energy": 0.88,
+            "label": "higher energy"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "fontWeight": "bold",
+        "fontSize": 11,
+        "fill": "#ff3b8c"
+      },
+      "encoding": {
+        "x": {
+          "field": "danceability",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "energy",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ]
 }

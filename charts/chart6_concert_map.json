@@ -915,6 +915,72 @@
           "field": "abbrev"
         }
       }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 144.9475,
+            "lat": -37.8166,
+            "lon2": 138.0,
+            "lat2": -32.0
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "stroke": "#f4cd56",
+        "strokeWidth": 1.5,
+        "opacity": 0.75
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon"
+        },
+        "latitude": {
+          "field": "lat"
+        },
+        "longitude2": {
+          "field": "lon2"
+        },
+        "latitude2": {
+          "field": "lat2"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 138.0,
+            "lat": -32.0,
+            "label": "Marvel Stadium — first K-pop"
+          },
+          {
+            "lon": 138.0,
+            "lat": -33.2,
+            "label": "stadium concert (TWICE 2023)"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "fontWeight": "bold",
+        "fontSize": 11.5,
+        "fill": "#f4cd56"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon"
+        },
+        "latitude": {
+          "field": "lat"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
     }
   ],
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",

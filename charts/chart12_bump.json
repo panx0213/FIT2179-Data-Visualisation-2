@@ -1,118 +1,327 @@
 {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "The Top K-pop Acts in Australia",
-    "subtitle": "Cumulative Spotify Australia streams for K-pop acts (top tracks aggregated, May 2026 snapshot). Source: kworb.net AU weekly totals.",
+    "text": "Punching Above Weight: Australia vs Global Rank",
+    "subtitle": "Where each K-pop act sits on AU Spotify cumulative streams vs Global. Lines slope down when an act is more popular in Australia than globally. Source: kworb.net all-time weekly.",
     "anchor": "start",
     "fontSize": 18,
     "subtitleFontSize": 12,
     "subtitleColor": "#d4c7e0"
   },
   "width": "container",
-  "height": 360,
+  "height": 460,
+  "padding": {
+    "left": 70,
+    "right": 90,
+    "top": 20,
+    "bottom": 8
+  },
   "autosize": {
     "type": "fit-x",
     "contains": "padding"
   },
   "config": {
+    "background": "transparent",
     "view": {
       "stroke": null
     },
     "axis": {
-      "labelFontSize": 11,
-      "titleFontSize": 12,
       "labelColor": "#d4c7e0",
       "titleColor": "#f7f0fa",
       "tickColor": "#3a2a55",
       "domainColor": "#3a2a55",
-      "gridColor": "#26193e"
+      "gridColor": "#26193e",
+      "labelFontSize": 11,
+      "titleFontSize": 12
     },
     "legend": {
+      "labelColor": "#d4c7e0",
+      "titleColor": "#f7f0fa",
       "orient": "bottom",
       "titleFontSize": 12,
       "labelFontSize": 11,
       "padding": 12,
-      "offset": 12,
-      "columns": 0,
-      "labelColor": "#d4c7e0",
-      "titleColor": "#f7f0fa"
+      "offset": 12
     },
-    "background": "transparent",
     "title": {
       "color": "#f7f0fa",
       "subtitleColor": "#d4c7e0"
-    },
-    "header": {
-      "labelColor": "#f0e9f5",
-      "titleColor": "#f0e9f5",
-      "labelFontSize": 13,
-      "labelFontWeight": "bold"
     }
   },
   "data": {
     "values": [
       {
         "artist": "HUNTR/X",
-        "streams": 145360648
+        "market": "Australia",
+        "rank": 1,
+        "streams": 147209100,
+        "delta": 3,
+        "highlight": "AU over-indexes"
+      },
+      {
+        "artist": "HUNTR/X",
+        "market": "Global",
+        "rank": 4,
+        "streams": 3010702204,
+        "delta": 3,
+        "highlight": "AU over-indexes"
       },
       {
         "artist": "ROSÉ",
-        "streams": 84143572
+        "market": "Australia",
+        "rank": 2,
+        "streams": 88761709,
+        "delta": 3,
+        "highlight": "AU over-indexes"
+      },
+      {
+        "artist": "ROSÉ",
+        "market": "Global",
+        "rank": 5,
+        "streams": 2831099541,
+        "delta": 3,
+        "highlight": "AU over-indexes"
       },
       {
         "artist": "BTS",
-        "streams": 35854452
+        "market": "Australia",
+        "rank": 3,
+        "streams": 60174231,
+        "delta": -2,
+        "highlight": "Global over-indexes"
+      },
+      {
+        "artist": "BTS",
+        "market": "Global",
+        "rank": 1,
+        "streams": 7315222860,
+        "delta": -2,
+        "highlight": "Global over-indexes"
       },
       {
         "artist": "BLACKPINK",
-        "streams": 24979332
+        "market": "Australia",
+        "rank": 4,
+        "streams": 34631177,
+        "delta": 2,
+        "highlight": "AU over-indexes"
       },
       {
-        "artist": "TWICE",
-        "streams": 20469594
+        "artist": "BLACKPINK",
+        "market": "Global",
+        "rank": 6,
+        "streams": 2610002122,
+        "delta": 2,
+        "highlight": "AU over-indexes"
       },
       {
-        "artist": "NewJeans",
-        "streams": 19477497
+        "artist": "Jungkook",
+        "market": "Australia",
+        "rank": 5,
+        "streams": 30054835,
+        "delta": -3,
+        "highlight": "Global over-indexes"
+      },
+      {
+        "artist": "Jungkook",
+        "market": "Global",
+        "rank": 2,
+        "streams": 5098757267,
+        "delta": -3,
+        "highlight": "Global over-indexes"
       },
       {
         "artist": "JENNIE",
-        "streams": 14888477
+        "market": "Australia",
+        "rank": 6,
+        "streams": 24390104,
+        "delta": 1,
+        "highlight": "AU over-indexes"
       },
       {
-        "artist": "Jung Kook",
-        "streams": 8069935
+        "artist": "JENNIE",
+        "market": "Global",
+        "rank": 7,
+        "streams": 1695750797,
+        "delta": 1,
+        "highlight": "AU over-indexes"
+      },
+      {
+        "artist": "NewJeans",
+        "market": "Australia",
+        "rank": 7,
+        "streams": 24256445,
+        "delta": 1,
+        "highlight": "AU over-indexes"
+      },
+      {
+        "artist": "NewJeans",
+        "market": "Global",
+        "rank": 8,
+        "streams": 1694612561,
+        "delta": 1,
+        "highlight": "AU over-indexes"
+      },
+      {
+        "artist": "TWICE",
+        "market": "Australia",
+        "rank": 8,
+        "streams": 20945487,
+        "delta": 3,
+        "highlight": "AU over-indexes"
+      },
+      {
+        "artist": "TWICE",
+        "market": "Global",
+        "rank": 11,
+        "streams": 743969353,
+        "delta": 3,
+        "highlight": "AU over-indexes"
       },
       {
         "artist": "LISA",
-        "streams": 4781043
+        "market": "Australia",
+        "rank": 9,
+        "streams": 10648847,
+        "delta": 0,
+        "highlight": "Even"
+      },
+      {
+        "artist": "LISA",
+        "market": "Global",
+        "rank": 9,
+        "streams": 1463035222,
+        "delta": 0,
+        "highlight": "Even"
       },
       {
         "artist": "ILLIT",
-        "streams": 4388579
+        "market": "Australia",
+        "rank": 10,
+        "streams": 4388579,
+        "delta": 2,
+        "highlight": "AU over-indexes"
+      },
+      {
+        "artist": "ILLIT",
+        "market": "Global",
+        "rank": 12,
+        "streams": 427017674,
+        "delta": 2,
+        "highlight": "AU over-indexes"
       }
     ]
   },
   "layer": [
     {
       "mark": {
-        "type": "bar",
-        "color": "#ff3b8c",
-        "cornerRadiusEnd": 3
+        "type": "line",
+        "strokeWidth": 2.5,
+        "opacity": 0.9
       },
       "encoding": {
-        "y": {
-          "field": "artist",
-          "type": "nominal",
-          "sort": "-x",
-          "title": null
-        },
         "x": {
-          "field": "streams",
-          "type": "quantitative",
-          "title": "Total AU Spotify streams (top tracks)",
+          "field": "market",
+          "type": "nominal",
+          "title": null,
+          "sort": [
+            "Australia",
+            "Global"
+          ],
           "axis": {
-            "format": "~s"
+            "labelFontSize": 13,
+            "labelFontWeight": "bold",
+            "labelPadding": 8
           }
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative",
+          "title": "Rank (1 = top)",
+          "scale": {
+            "reverse": true,
+            "domain": [
+              0.5,
+              12.5
+            ]
+          },
+          "axis": {
+            "values": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ]
+          }
+        },
+        "detail": {
+          "field": "artist"
+        },
+        "color": {
+          "field": "highlight",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "AU over-indexes",
+              "Even",
+              "Global over-indexes"
+            ],
+            "range": [
+              "#ff3b8c",
+              "#d4c7e0",
+              "#4ddcc2"
+            ]
+          },
+          "legend": {
+            "orient": "bottom"
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 140,
+        "opacity": 1,
+        "stroke": "white",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "market",
+          "type": "nominal",
+          "sort": [
+            "Australia",
+            "Global"
+          ]
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "highlight",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "AU over-indexes",
+              "Even",
+              "Global over-indexes"
+            ],
+            "range": [
+              "#ff3b8c",
+              "#d4c7e0",
+              "#4ddcc2"
+            ]
+          },
+          "legend": null
         },
         "tooltip": [
           {
@@ -120,43 +329,84 @@
             "title": "Artist"
           },
           {
+            "field": "market",
+            "title": "Market"
+          },
+          {
+            "field": "rank",
+            "title": "Rank"
+          },
+          {
             "field": "streams",
-            "title": "AU streams",
+            "title": "Streams",
             "format": ","
           }
         ]
       }
     },
     {
+      "transform": [
+        {
+          "filter": "datum.market == 'Australia'"
+        }
+      ],
       "mark": {
         "type": "text",
-        "align": "left",
-        "dx": 6,
-        "color": "#f0e9f5",
-        "fontWeight": "bold"
+        "align": "right",
+        "dx": -12,
+        "fontWeight": "bold",
+        "fontSize": 11.5,
+        "color": "#f7f0fa"
       },
       "encoding": {
-        "y": {
-          "field": "artist",
-          "type": "nominal",
-          "sort": "-x"
-        },
         "x": {
-          "field": "streams",
+          "field": "market",
+          "type": "nominal",
+          "sort": [
+            "Australia",
+            "Global"
+          ]
+        },
+        "y": {
+          "field": "rank",
           "type": "quantitative"
         },
         "text": {
-          "field": "streams",
-          "format": ".2s"
+          "field": "artist"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.market == 'Global'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 12,
+        "fontWeight": "bold",
+        "fontSize": 11.5,
+        "color": "#f7f0fa"
+      },
+      "encoding": {
+        "x": {
+          "field": "market",
+          "type": "nominal",
+          "sort": [
+            "Australia",
+            "Global"
+          ]
+        },
+        "y": {
+          "field": "rank",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "artist"
         }
       }
     }
-  ],
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "padding": {
-    "left": 24,
-    "right": 24,
-    "top": 8,
-    "bottom": 8
-  }
+  ]
 }

@@ -1,51 +1,51 @@
 {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Who Owns the Sound in Australia?",
-    "subtitle": "Top 24 K-pop tracks on Spotify Australia (weekly totals, May 2026), coloured by entertainment company. Source: kworb.net.",
+    "subtitle": "Top 24 K-pop tracks on Spotify Australia (weekly totals, May 2026), as a lollipop chart coloured by entertainment company. Source: kworb.net.",
     "anchor": "start",
     "fontSize": 18,
     "subtitleFontSize": 12,
     "subtitleColor": "#d4c7e0"
   },
   "width": "container",
-  "height": 420,
+  "height": 480,
+  "padding": {
+    "left": 24,
+    "right": 80,
+    "top": 30,
+    "bottom": 8
+  },
   "autosize": {
     "type": "fit-x",
     "contains": "padding"
   },
   "config": {
+    "background": "transparent",
     "view": {
       "stroke": null
     },
     "axis": {
-      "labelFontSize": 11,
-      "titleFontSize": 12,
       "labelColor": "#d4c7e0",
       "titleColor": "#f7f0fa",
       "tickColor": "#3a2a55",
       "domainColor": "#3a2a55",
-      "gridColor": "#26193e"
+      "gridColor": "#26193e",
+      "labelFontSize": 11,
+      "titleFontSize": 12
     },
     "legend": {
+      "labelColor": "#d4c7e0",
+      "titleColor": "#f7f0fa",
       "orient": "bottom",
       "titleFontSize": 12,
       "labelFontSize": 11,
       "padding": 12,
-      "offset": 12,
-      "columns": 0,
-      "labelColor": "#d4c7e0",
-      "titleColor": "#f7f0fa"
+      "offset": 12
     },
-    "background": "transparent",
     "title": {
       "color": "#f7f0fa",
       "subtitleColor": "#d4c7e0"
-    },
-    "header": {
-      "labelColor": "#f0e9f5",
-      "titleColor": "#f0e9f5",
-      "labelFontSize": 13,
-      "labelFontWeight": "bold"
     }
   },
   "data": {
@@ -196,26 +196,6 @@
       }
     ]
   },
-  "transform": [
-    {
-      "window": [
-        {
-          "op": "row_number",
-          "as": "rank"
-        }
-      ],
-      "sort": [
-        {
-          "field": "streams",
-          "order": "descending"
-        }
-      ]
-    }
-  ],
-  "mark": {
-    "type": "bar",
-    "cornerRadiusEnd": 3
-  },
   "encoding": {
     "y": {
       "field": "track",
@@ -223,15 +203,8 @@
       "sort": "-x",
       "title": null,
       "axis": {
-        "labelLimit": 200
-      }
-    },
-    "x": {
-      "field": "streams",
-      "type": "quantitative",
-      "title": "Total streams in Australia",
-      "axis": {
-        "format": "~s"
+        "labelLimit": 200,
+        "labelFontSize": 11
       }
     },
     "color": {
@@ -257,32 +230,94 @@
       "legend": {
         "orient": "bottom"
       }
-    },
-    "tooltip": [
-      {
-        "field": "artist",
-        "title": "Artist"
-      },
-      {
-        "field": "track",
-        "title": "Track"
-      },
-      {
-        "field": "label",
-        "title": "Label"
-      },
-      {
-        "field": "streams",
-        "title": "AU streams",
-        "format": ","
-      }
-    ]
+    }
   },
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "padding": {
-    "left": 24,
-    "right": 24,
-    "top": 8,
-    "bottom": 8
-  }
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "strokeWidth": 2,
+        "opacity": 0.55
+      },
+      "encoding": {
+        "x": {
+          "field": "streams",
+          "type": "quantitative",
+          "title": "Total streams in Australia",
+          "axis": {
+            "format": "~s"
+          }
+        },
+        "x2": {
+          "datum": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 140,
+        "opacity": 1,
+        "stroke": "white",
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "x": {
+          "field": "streams",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "artist",
+            "title": "Artist"
+          },
+          {
+            "field": "track",
+            "title": "Track"
+          },
+          {
+            "field": "label",
+            "title": "Label"
+          },
+          {
+            "field": "streams",
+            "title": "AU streams",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "track": "Golden",
+            "x": 70921705,
+            "label_y": -1.5,
+            "label": "K-pop Demon Hunters OST"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 8,
+        "fontWeight": "bold",
+        "fontSize": 11.5,
+        "color": "#f4cd56"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "datum": "Golden"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ]
 }
