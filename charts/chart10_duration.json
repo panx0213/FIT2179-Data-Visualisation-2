@@ -8,17 +8,11 @@
     "subtitleFontSize": 12,
     "subtitleColor": "#666"
   },
-  "width": "container",
-  "height": 300,
   "padding": {
     "left": 24,
     "right": 24,
     "top": 8,
     "bottom": 8
-  },
-  "autosize": {
-    "type": "fit-x",
-    "contains": "padding"
   },
   "config": {
     "view": {
@@ -5467,7 +5461,7 @@
     }
   },
   "spec": {
-    "width": 460,
+    "width": 440,
     "height": 280,
     "mark": {
       "type": "bar",
