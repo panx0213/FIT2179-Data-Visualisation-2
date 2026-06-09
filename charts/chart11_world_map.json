@@ -217,13 +217,14 @@
       },
       "mark": {
         "type": "text",
-        "fontSize": 10,
+        "fontSize": 13,
         "fontWeight": "bold",
         "fill": "#1a1a2e",
         "stroke": "white",
-        "strokeWidth": 3,
+        "strokeWidth": 2,
         "strokeJoin": "round",
-        "paintOrder": "stroke"
+        "paintOrder": "stroke",
+        "strokeOpacity": 0.9
       },
       "encoding": {
         "longitude": {
