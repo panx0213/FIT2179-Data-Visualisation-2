@@ -25,8 +25,7 @@ function embedChart({ id, spec }) {
   vegaEmbed(`#${id}`, spec + CACHE_BUST, {
     actions: false,
     renderer: "svg",
-    mode: "vega-lite",
-    loader: { http: { headers: { "Cache-Control": "no-cache" } } }
+    mode: "vega-lite"
   })
     .then(({ view }) => {
       const ro = new ResizeObserver(() => {
