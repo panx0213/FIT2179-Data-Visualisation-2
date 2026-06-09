@@ -159,6 +159,83 @@
           }
         ]
       }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "name": "USA",
+            "lon": -98.0,
+            "lat": 38.0
+          },
+          {
+            "name": "Japan",
+            "lon": 138.0,
+            "lat": 36.0
+          },
+          {
+            "name": "UK",
+            "lon": -2.0,
+            "lat": 54.0
+          },
+          {
+            "name": "Germany",
+            "lon": 10.0,
+            "lat": 51.0
+          },
+          {
+            "name": "China",
+            "lon": 105.0,
+            "lat": 35.0
+          },
+          {
+            "name": "France",
+            "lon": 2.0,
+            "lat": 46.5
+          },
+          {
+            "name": "S. Korea",
+            "lon": 128.0,
+            "lat": 36.5
+          },
+          {
+            "name": "Canada",
+            "lon": -106.0,
+            "lat": 56.0
+          },
+          {
+            "name": "Australia",
+            "lon": 135.0,
+            "lat": -25.0
+          },
+          {
+            "name": "Brazil",
+            "lon": -55.0,
+            "lat": -10.0
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "fontWeight": "bold",
+        "fill": "#1a1a2e",
+        "stroke": "white",
+        "strokeWidth": 3,
+        "strokeJoin": "round",
+        "paintOrder": "stroke"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon"
+        },
+        "latitude": {
+          "field": "lat"
+        },
+        "text": {
+          "field": "name"
+        }
+      }
     }
   ]
 }

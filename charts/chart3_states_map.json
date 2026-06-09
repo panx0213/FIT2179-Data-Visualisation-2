@@ -130,6 +130,73 @@
           }
         ]
       }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "abbrev": "NSW",
+            "lon": 147.0,
+            "lat": -32.5
+          },
+          {
+            "abbrev": "VIC",
+            "lon": 144.5,
+            "lat": -37.0
+          },
+          {
+            "abbrev": "QLD",
+            "lon": 144.0,
+            "lat": -22.5
+          },
+          {
+            "abbrev": "WA",
+            "lon": 121.5,
+            "lat": -26.0
+          },
+          {
+            "abbrev": "SA",
+            "lon": 135.0,
+            "lat": -30.0
+          },
+          {
+            "abbrev": "TAS",
+            "lon": 146.7,
+            "lat": -42.0
+          },
+          {
+            "abbrev": "NT",
+            "lon": 133.5,
+            "lat": -19.5
+          },
+          {
+            "abbrev": "ACT",
+            "lon": 149.2,
+            "lat": -35.5
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "fill": "#1a1a2e",
+        "stroke": "white",
+        "strokeWidth": 3,
+        "strokeJoin": "round",
+        "paintOrder": "stroke"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon"
+        },
+        "latitude": {
+          "field": "lat"
+        },
+        "text": {
+          "field": "abbrev"
+        }
+      }
     }
   ],
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
