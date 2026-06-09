@@ -9,7 +9,7 @@
     "subtitleColor": "#666"
   },
   "width": "container",
-  "height": 320,
+  "height": 300,
   "padding": {
     "left": 24,
     "right": 24,
@@ -29,11 +29,14 @@
       "titleFontSize": 12
     },
     "legend": {
-      "orient": "bottom",
-      "titleFontSize": 12,
-      "labelFontSize": 11,
-      "padding": 12,
-      "offset": 12
+      "orient": "bottom"
+    },
+    "header": {
+      "titleFontSize": 14,
+      "labelFontSize": 14,
+      "labelFontWeight": "bold",
+      "labelPadding": 8,
+      "labelColor": "#1a1a2e"
     }
   },
   "data": {
@@ -5449,71 +5452,98 @@
       "as": "weight"
     }
   ],
-  "mark": {
-    "type": "bar",
-    "cornerRadiusEnd": 2
-  },
-  "encoding": {
-    "x": {
-      "field": "duration_s",
-      "type": "quantitative",
-      "bin": {
-        "step": 15,
-        "extent": [
-          60,
-          360
-        ]
-      },
-      "title": "Duration (seconds)"
-    },
-    "xOffset": {
+  "facet": {
+    "column": {
       "field": "genre",
       "type": "nominal",
+      "title": null,
       "sort": [
         "K-pop",
         "Western Pop"
-      ]
-    },
-    "y": {
-      "aggregate": "sum",
-      "field": "weight",
-      "type": "quantitative",
-      "title": "Share of tracks within genre (%)",
-      "stack": null
-    },
-    "color": {
-      "field": "genre",
-      "type": "nominal",
-      "title": "Genre",
-      "scale": {
-        "domain": [
-          "K-pop",
-          "Western Pop"
-        ],
-        "range": [
-          "#e94560",
-          "#1a1a2e"
-        ]
-      },
-      "legend": {
-        "orient": "bottom"
+      ],
+      "header": {
+        "labelOrient": "top"
       }
+    }
+  },
+  "spec": {
+    "width": 460,
+    "height": 280,
+    "mark": {
+      "type": "bar",
+      "cornerRadiusEnd": 2,
+      "stroke": "white",
+      "strokeWidth": 0.5
     },
-    "tooltip": [
-      {
-        "field": "genre",
-        "title": "Genre"
+    "encoding": {
+      "x": {
+        "field": "duration_s",
+        "type": "quantitative",
+        "bin": {
+          "step": 15,
+          "extent": [
+            60,
+            360
+          ]
+        },
+        "title": "Duration (seconds)",
+        "scale": {
+          "domain": [
+            60,
+            360
+          ]
+        }
       },
-      {
-        "aggregate": "count",
-        "title": "Tracks in bin"
-      },
-      {
+      "y": {
         "aggregate": "sum",
         "field": "weight",
-        "title": "% of genre",
-        "format": ".1f"
-      }
-    ]
+        "type": "quantitative",
+        "title": "Share of tracks within genre (%)",
+        "scale": {
+          "domain": [
+            0,
+            22
+          ]
+        }
+      },
+      "color": {
+        "field": "genre",
+        "type": "nominal",
+        "title": null,
+        "legend": null,
+        "scale": {
+          "domain": [
+            "K-pop",
+            "Western Pop"
+          ],
+          "range": [
+            "#e94560",
+            "#1a1a2e"
+          ]
+        }
+      },
+      "tooltip": [
+        {
+          "field": "genre",
+          "title": "Genre"
+        },
+        {
+          "aggregate": "count",
+          "title": "Tracks in bin"
+        },
+        {
+          "aggregate": "sum",
+          "field": "weight",
+          "title": "% of genre",
+          "format": ".1f"
+        }
+      ]
+    }
+  },
+  "resolve": {
+    "scale": {
+      "y": "shared",
+      "x": "shared"
+    }
   }
 }
